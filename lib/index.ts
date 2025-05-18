@@ -1,28 +1,7 @@
 import type { CircuitJson } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
-
-type Camera = {
-  position: { x: number; y: number; z: number }
-  lookAt: { x: number; y: number; z: number }
-  focalLength?: number
-}
-
-function getDefaultCameraUsingPcbBoard(pcbBoard: any): Camera {
-  const w = pcbBoard.width
-  const h = pcbBoard.height
-
-  const cx = pcbBoard.center?.x
-  const cz = pcbBoard.center?.y // pcb y → renderer z
-
-  const dist = Math.max(w, h) * 1.5
-
-  return {
-    position: { x: cx - dist, y: dist, z: cz - dist },
-    lookAt: { x: cx, y: 0, z: cz },
-    focalLength: 2,
-  }
-}
+import { getDefaultCameraForPcbBoard } from "./getDefaultCameraForPcbBoard"
 
 export function convertCircuitJsonToSimple3dSvg(
   circuitJson: CircuitJson,
@@ -32,7 +11,7 @@ export function convertCircuitJsonToSimple3dSvg(
       lookAt: { x: number; y: number; z: number }
       focalLength?: number
     }
-  },
+  } = {},
 ): string {
   const db = cju(circuitJson)
   const boxes: Box[] = []
@@ -42,7 +21,7 @@ export function convertCircuitJsonToSimple3dSvg(
   if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
 
   // TODO if camera not
-  const camera = opts.camera ?? getDefaultCameraUsingPcbBoard(pcbBoard)
+  const camera = opts.camera ?? getDefaultCameraForPcbBoard(pcbBoard)
   if (!camera.focalLength) {
     camera.focalLength = 1
   }
@@ -62,9 +41,10 @@ export function convertCircuitJsonToSimple3dSvg(
     color: "rgba(0,140,0,0.8)",
   })
 
-  const DEFAULT_COMP_HEIGHT = 4 // mm – arbitrary extrusion for components
+  const DEFAULT_COMP_HEIGHT = 2 // mm – arbitrary extrusion for components
 
   for (const comp of db.pcb_component.list()) {
+    const sourceComponent = db.source_component.get(comp.source_component_id)
     boxes.push({
       center: {
         x: comp.center.x,
@@ -77,10 +57,17 @@ export function convertCircuitJsonToSimple3dSvg(
         z: comp.height,
       },
       color: "rgba(128,128,128,0.9)",
-      topLabel: comp.source_component_id,
+      topLabel: sourceComponent?.name ?? "?",
       topLabelColor: "white",
     })
   }
 
-  return renderScene({ boxes, camera, backgroundColor: "white" })
+  Bun.write("test.json", JSON.stringify({ boxes, camera }, null, 2))
+
+  return renderScene(
+    { boxes, camera },
+    {
+      backgroundColor: "gray",
+    },
+  )
 }
