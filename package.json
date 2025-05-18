@@ -5,7 +5,8 @@
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@tscircuit/simple-3d-svg": "^0.0.2",
+    "@tscircuit/circuit-json-util": "^0.0.47",
+    "@tscircuit/simple-3d-svg": "^0.0.3",
     "@types/bun": "latest",
     "bun-match-svg": "^0.0.11",
     "circuit-json": "^0.0.180",
