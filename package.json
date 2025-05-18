@@ -1,6 +1,7 @@
 {
   "name": "circuit-json-to-simple-3d",
   "main": "dist/index.js",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "tsup-node --dts --sourcemap inline --format esm ./lib/index.ts",
