@@ -3,6 +3,6 @@ import usbCFlashlightCircuitJson from "./assets/usb-c-flashlight.json"
 import { convertCircuitJsonToSimple3dSvg } from "lib"
 
 test("usb-c-flashlight", () => {
-  const svg = convertCircuitJsonToSimple3dSvg(usbCFlashlightCircuitJson)
+  const svg = convertCircuitJsonToSimple3dSvg(usbCFlashlightCircuitJson as any)
   expect(svg).toMatchSvgSnapshot(import.meta.path)
 })

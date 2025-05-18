@@ -1,4 +1,5 @@
 import type { PcbBoard } from "circuit-json"
+import type { Camera } from "@tscircuit/simple-3d-svg"
 
 export function getDefaultCameraForPcbBoard(pcbBoard: PcbBoard): Camera {
   const w = pcbBoard.width
