@@ -1,12 +1,16 @@
 {
   "name": "circuit-json-to-simple-3d",
-  "module": "index.ts",
+  "main": "dist/index.js",
   "type": "module",
-  "private": true,
+  "scripts": {
+    "build": "tsup-node --dts --sourcemap inline --format esm ./lib/index.ts",
+    "format": "biome format --write .",
+    "format:check": "biome format ."
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@tscircuit/circuit-json-util": "^0.0.47",
-    "@tscircuit/simple-3d-svg": "^0.0.3",
+    "@tscircuit/simple-3d-svg": "^0.0.5",
     "@types/bun": "latest",
     "bun-match-svg": "^0.0.11",
     "circuit-json": "^0.0.180",

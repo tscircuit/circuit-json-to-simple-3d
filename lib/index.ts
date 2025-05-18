@@ -53,7 +53,7 @@ export function convertCircuitJsonToSimple3dSvg(
       },
       size: {
         x: comp.width,
-        y: DEFAULT_COMP_HEIGHT,
+        y: Math.min(Math.min(comp.width, comp.height), DEFAULT_COMP_HEIGHT),
         z: comp.height,
       },
       color: "rgba(128,128,128,0.9)",
@@ -62,12 +62,10 @@ export function convertCircuitJsonToSimple3dSvg(
     })
   }
 
-  Bun.write("test.json", JSON.stringify({ boxes, camera }, null, 2))
-
   return renderScene(
     { boxes, camera },
     {
-      backgroundColor: "gray",
+      backgroundColor: "lightgray",
     },
   )
 }
