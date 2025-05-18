@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@tscircuit/simple-3d-svg": "^0.0.2",
     "@types/bun": "latest",
     "bun-match-svg": "^0.0.11",
