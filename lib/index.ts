@@ -2,6 +2,7 @@ import type { CircuitJson } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
 import { getDefaultCameraForPcbBoard } from "./getDefaultCameraForPcbBoard"
+import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 
 export function convertCircuitJsonToSimple3dSvg(
   circuitJson: CircuitJson,
@@ -15,6 +16,8 @@ export function convertCircuitJsonToSimple3dSvg(
 ): string {
   const db = cju(circuitJson)
   const boxes: Box[] = []
+
+  const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson) // TODO add layer option when it's supported
 
   const pcbBoard = db.pcb_board.list()[0]
 
@@ -37,6 +40,9 @@ export function convertCircuitJsonToSimple3dSvg(
       x: pcbBoard.width,
       y: pcbBoard.thickness,
       z: pcbBoard.height,
+    },
+    faceImages: {
+      top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
     },
     color: "rgba(0,140,0,0.8)",
   })
