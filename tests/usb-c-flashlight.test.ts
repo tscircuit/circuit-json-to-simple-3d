@@ -27,8 +27,14 @@ test("usb-c-flashlight", async () => {
       anglePreset: "right",
     },
   )
-  expect(svg1).toMatchSvgSnapshot("flashlight-angle1")
-  expect(svg2).toMatchSvgSnapshot("flashlight-angle2")
-  expect(svg3).toMatchSvgSnapshot("flashlight-left")
-  expect(svg4).toMatchSvgSnapshot("flashlight-right")
+  const svg5 = await convertCircuitJsonToSimple3dSvg(
+    usbCFlashlightCircuitJson as any,
+    {
+      anglePreset: "left-raised",
+    },
+  )
+  expect([svg1, svg2, svg3, svg4, svg5]).toMatchMultipleSvgSnapshots(
+    import.meta.path,
+    ["angle1", "angle2", "left", "right", "left-raised"],
+  )
 })

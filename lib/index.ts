@@ -41,7 +41,6 @@ export async function convertCircuitJsonToSimple3dSvg(
   const camera =
     opts.camera ??
     getDefaultCameraForPcbBoard(pcbBoard, opts.anglePreset ?? "angle1")
-  console.log(opts.anglePreset ?? "angle1", camera)
   if (!camera.focalLength) {
     camera.focalLength = 1
   }
@@ -69,15 +68,19 @@ export async function convertCircuitJsonToSimple3dSvg(
 
   for (const comp of db.pcb_component.list()) {
     const sourceComponent = db.source_component.get(comp.source_component_id)
+    const compHeight = Math.min(
+      Math.min(comp.width, comp.height),
+      DEFAULT_COMP_HEIGHT,
+    )
     boxes.push({
       center: {
         x: comp.center.x,
-        y: pcbBoard.thickness / 2,
+        y: pcbBoard.thickness / 2 + compHeight / 2,
         z: comp.center.y,
       },
       size: {
         x: comp.width,
-        y: Math.min(Math.min(comp.width, comp.height), DEFAULT_COMP_HEIGHT),
+        y: compHeight,
         z: comp.height,
       },
       color: "rgba(128,128,128,0.5)",
