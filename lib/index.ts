@@ -1,9 +1,13 @@
 import type { CircuitJson } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
-import { getDefaultCameraForPcbBoard } from "./getDefaultCameraForPcbBoard"
+import {
+  getDefaultCameraForPcbBoard,
+  type AnglePreset,
+} from "./getDefaultCameraForPcbBoard"
+import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 
-export function convertCircuitJsonToSimple3dSvg(
+export async function convertCircuitJsonToSimple3dSvg(
   circuitJson: CircuitJson,
   opts: {
     camera?: {
@@ -11,17 +15,35 @@ export function convertCircuitJsonToSimple3dSvg(
       lookAt: { x: number; y: number; z: number }
       focalLength?: number
     }
+    anglePreset?: AnglePreset
   } = {},
-): string {
+): Promise<string> {
   const db = cju(circuitJson)
   const boxes: Box[] = []
+
+  const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson, {
+    layer: "top",
+    matchBoardAspectRatio: true,
+    backgroundColor: "transparent",
+    drawPaddingOutsideBoard: false,
+    colorOverrides: {
+      copper: {
+        top: "#ffe066", // sort of a yellow
+        bottom: "#ffe066",
+      },
+      drill: "rgba(0,0,0,0.5)",
+    },
+  }).replace("<svg", "<svg transform='scale(1, -1)'")
+  // console.log(pcbTopSvg)
 
   const pcbBoard = db.pcb_board.list()[0]
 
   if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
 
   // TODO if camera not
-  const camera = opts.camera ?? getDefaultCameraForPcbBoard(pcbBoard)
+  const camera =
+    opts.camera ??
+    getDefaultCameraForPcbBoard(pcbBoard, opts.anglePreset ?? "angle1")
   if (!camera.focalLength) {
     camera.focalLength = 1
   }
@@ -38,6 +60,10 @@ export function convertCircuitJsonToSimple3dSvg(
       y: pcbBoard.thickness,
       z: pcbBoard.height,
     },
+    faceImages: {
+      top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
+    },
+    projectionSubdivision: 10,
     color: "rgba(0,140,0,0.8)",
   })
 
@@ -45,24 +71,28 @@ export function convertCircuitJsonToSimple3dSvg(
 
   for (const comp of db.pcb_component.list()) {
     const sourceComponent = db.source_component.get(comp.source_component_id)
+    const compHeight = Math.min(
+      Math.min(comp.width, comp.height),
+      DEFAULT_COMP_HEIGHT,
+    )
     boxes.push({
       center: {
         x: comp.center.x,
-        y: pcbBoard.thickness / 2 + DEFAULT_COMP_HEIGHT / 2,
+        y: pcbBoard.thickness / 2 + compHeight / 2,
         z: comp.center.y,
       },
       size: {
         x: comp.width,
-        y: Math.min(Math.min(comp.width, comp.height), DEFAULT_COMP_HEIGHT),
+        y: compHeight,
         z: comp.height,
       },
-      color: "rgba(128,128,128,0.9)",
+      color: "rgba(128,128,128,0.5)",
       topLabel: sourceComponent?.name ?? "?",
       topLabelColor: "white",
     })
   }
 
-  return renderScene(
+  return await renderScene(
     { boxes, camera },
     {
       backgroundColor: "lightgray",
