@@ -1,7 +1,10 @@
 import type { CircuitJson } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
-import { getDefaultCameraForPcbBoard } from "./getDefaultCameraForPcbBoard"
+import {
+  getDefaultCameraForPcbBoard,
+  type AnglePreset,
+} from "./getDefaultCameraForPcbBoard"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 
 export async function convertCircuitJsonToSimple3dSvg(
@@ -12,7 +15,7 @@ export async function convertCircuitJsonToSimple3dSvg(
       lookAt: { x: number; y: number; z: number }
       focalLength?: number
     }
-    anglePreset?: "angle1" | "angle2" | "left" | "right"
+    anglePreset?: AnglePreset
   } = {},
 ): Promise<string> {
   const db = cju(circuitJson)
@@ -60,7 +63,7 @@ export async function convertCircuitJsonToSimple3dSvg(
     faceImages: {
       top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
     },
-    projectionSubdivision: 4,
+    projectionSubdivision: 10,
     color: "rgba(0,140,0,0.8)",
   })
 

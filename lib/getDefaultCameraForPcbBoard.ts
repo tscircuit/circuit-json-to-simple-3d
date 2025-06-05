@@ -19,7 +19,7 @@ export function getDefaultCameraForPcbBoard(
   const cx = pcbBoard.center?.x
   const cz = pcbBoard.center?.y // pcb y → renderer z
 
-  const dist = Math.max(w, h) * 1.5 * 10
+  const dist = Math.max(w, h) * 1.5 // * 10
 
   let position: Point3
   if (anglePreset === "angle1") {
@@ -41,6 +41,6 @@ export function getDefaultCameraForPcbBoard(
   return {
     position,
     lookAt: { x: cx, y: 0, z: cz },
-    focalLength: 20,
+    focalLength: 2,
   }
 }
