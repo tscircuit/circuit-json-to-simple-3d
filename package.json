@@ -11,7 +11,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@tscircuit/circuit-json-util": "^0.0.47",
-    "@tscircuit/simple-3d-svg": "^0.0.10",
+    "@tscircuit/simple-3d-svg": "^0.0.14",
     "@types/bun": "latest",
     "bun-match-svg": "^0.0.11",
     "circuit-json": "^0.0.180",

@@ -1,6 +1,8 @@
 import type { CircuitJson } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
+
+const degToRad = (d: number) => (d * Math.PI) / 180
 import {
   getDefaultCameraForPcbBoard,
   type AnglePreset,
@@ -69,7 +71,59 @@ export async function convertCircuitJsonToSimple3dSvg(
 
   const DEFAULT_COMP_HEIGHT = 2 // mm – arbitrary extrusion for components
 
+  const cadComponentsByPcbId = new Map<string, any[]>()
+  for (const cad of db.cad_component.list()) {
+    if (!cadComponentsByPcbId.has(cad.pcb_component_id)) {
+      cadComponentsByPcbId.set(cad.pcb_component_id, [])
+    }
+    cadComponentsByPcbId.get(cad.pcb_component_id)!.push(cad)
+
+    const pcbComp = db.pcb_component.get(cad.pcb_component_id)
+    if (!pcbComp) continue
+    const sourceComponent = db.source_component.get(cad.source_component_id)
+    const size = cad.size ?? {
+      x: pcbComp.width,
+      y: DEFAULT_COMP_HEIGHT,
+      z: pcbComp.height,
+    }
+
+    const rotation = cad.rotation
+      ? {
+          x: degToRad(cad.rotation.x),
+          y: degToRad(cad.rotation.y),
+          z: degToRad(cad.rotation.z),
+        }
+      : undefined
+
+    const box: Box = {
+      center: {
+        x: cad.position.x,
+        y: cad.position.z,
+        z: cad.position.y,
+      },
+      size,
+      rotation,
+      color: "rgba(128,128,128,0.5)",
+      topLabel: sourceComponent?.name ?? "?",
+      topLabelColor: "white",
+    }
+
+    if (cad.model_stl_url) {
+      box.stlUrl = cad.model_stl_url
+    }
+    if (cad.model_obj_url) {
+      box.objUrl = cad.model_obj_url
+    }
+
+    boxes.push(box)
+  }
+
   for (const comp of db.pcb_component.list()) {
+    const cadList = cadComponentsByPcbId.get(comp.pcb_component_id) || []
+    const hasModel = cadList.some(
+      (c) => c.model_stl_url || c.model_obj_url,
+    )
+    if (hasModel) continue
     const sourceComponent = db.source_component.get(comp.source_component_id)
     const compHeight = Math.min(
       Math.min(comp.width, comp.height),
