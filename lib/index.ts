@@ -87,13 +87,18 @@ export async function convertCircuitJsonToSimple3dSvg(
       z: pcbComp.height,
     }
 
+    // We need to translate all the models from Y-up to Z-up
     const rotation = cad.rotation
       ? {
-          x: degToRad(cad.rotation.x),
-          y: degToRad(cad.rotation.y),
-          z: degToRad(cad.rotation.z),
+          x: degToRad(cad.rotation.x) - Math.PI / 2,
+          y: degToRad(cad.rotation.z) + Math.PI,
+          z: degToRad(cad.rotation.y),
         }
-      : undefined
+      : {
+          x: 0,
+          y: 0, // maybe Math.PI/4
+          z: 0,
+        }
 
     const box: Box = {
       center: {
@@ -102,17 +107,17 @@ export async function convertCircuitJsonToSimple3dSvg(
         z: cad.position.y,
       },
       size,
-      rotation,
-      color: "rgba(128,128,128,0.5)",
       topLabel: sourceComponent?.name ?? "?",
       topLabelColor: "white",
     }
 
     if (cad.model_stl_url) {
       box.stlUrl = cad.model_stl_url
+      box.stlRotation = rotation
     }
     if (cad.model_obj_url) {
       box.objUrl = cad.model_obj_url
+      box.objRotation = rotation
     }
 
     boxes.push(box)
@@ -120,9 +125,7 @@ export async function convertCircuitJsonToSimple3dSvg(
 
   for (const comp of db.pcb_component.list()) {
     const cadList = cadComponentsByPcbId.get(comp.pcb_component_id) || []
-    const hasModel = cadList.some(
-      (c) => c.model_stl_url || c.model_obj_url,
-    )
+    const hasModel = cadList.some((c) => c.model_stl_url || c.model_obj_url)
     if (hasModel) continue
     const sourceComponent = db.source_component.get(comp.source_component_id)
     const compHeight = Math.min(

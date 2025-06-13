@@ -6,7 +6,7 @@
       "devDependencies": {
         "@biomejs/biome": "^1.9.4",
         "@tscircuit/circuit-json-util": "^0.0.47",
-        "@tscircuit/simple-3d-svg": "^0.0.14",
+        "@tscircuit/simple-3d-svg": "^0.0.18",
         "@types/bun": "latest",
         "bun-match-svg": "^0.0.11",
         "circuit-json": "^0.0.180",
@@ -150,7 +150,7 @@
 
     "@tscircuit/mm": ["@tscircuit/mm@0.0.8", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-nl7nxE7AhARbKuobflI0LUzoir7+wJyvwfPw6bzA/O0Q3YTcH3vBkU/Of+V/fp6ht+AofiCXj7YAH9E446138Q=="],
 
-    "@tscircuit/simple-3d-svg": ["@tscircuit/simple-3d-svg@0.0.14", "", {}, "sha512-95LzxRZSUpJVguaw9ouP1co9AD4wvoSnM0yz7TMF/9i+tyyMeAN5OSFNEYrfDjMXLnGTKpOP8fgUC9GsdRYVHA=="],
+    "@tscircuit/simple-3d-svg": ["@tscircuit/simple-3d-svg@0.0.18", "", {}, "sha512-8knwqWZWvnWoeGm2oDVoVx1kxa6nqEl+1db1CyxjRz1Nouf1T4NnHi3GrMQ1lHElT9S8OU4bv0xiPErNTXp44Q=="],
 
     "@types/bun": ["@types/bun@1.2.13", "", { "dependencies": { "bun-types": "1.2.13" } }, "sha512-u6vXep/i9VBxoJl3GjZsl/BFIsvML8DfVDO0RYLEwtSZSp981kEO1V5NwRcO1CPJ7AmvpbnDCiMKo3JvbDEjAg=="],
 
