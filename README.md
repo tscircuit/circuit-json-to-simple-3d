@@ -3,7 +3,7 @@
 Convert Circuit JSON into a simplified 3d representation, suitable for visual
 snapshot testing or inspecting prior to assembly.
 
-![example 3d svg](./tests/__snapshots__/usb-c-flashlight.snap.svg)
+![example 3d svg](./tests/__snapshots__/angle1.snap.svg)
 
 ## Usage
 
