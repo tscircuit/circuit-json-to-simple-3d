@@ -43,11 +43,10 @@ test("comprehensive examples - all new features", async () => {
   )
 
   const scalableExample: Simple3dSvgOptions = {
-    anglePreset: "right",
+    anglePreset: "angle1",
     scalable: true,
-    width: 1024,
-    height: 768,
-    zoom: { fitToView: true },
+    width: 800,
+    height: 600,
     background: { color: "#ecf0f1" },
   }
   const scalableSvg = await convertCircuitJsonToSimple3dSvg(
