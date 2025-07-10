@@ -62,7 +62,9 @@ export function getDefaultCameraForPcbBoard(
   }
 
   // Use effective zoom level for focal length calculation
-  const focalLength = effectiveZoomLevel ? Math.max(1, 2 * effectiveZoomLevel) : 2
+  const focalLength = effectiveZoomLevel
+    ? Math.max(1, 2 * effectiveZoomLevel)
+    : 2
 
   return {
     position,
