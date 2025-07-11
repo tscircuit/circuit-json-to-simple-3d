@@ -1,0 +1,449 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="-100 -75 200 150">  <rect x="-100" y="-75" width="200" height="150" fill="lightgray" />
+  <defs>
+    <image id="tex0" href="data:image/svg+xml;base64,PHN2ZyB0cmFuc2Zvcm09J3NjYWxlKDEsIC0xKScgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjIwMDAiPjxzdHlsZT48L3N0eWxlPjxyZWN0IGNsYXNzPSJib3VuZGFyeSIgeD0iMCIgeT0iMCIgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSI4MDAiIGhlaWdodD0iMjAwMCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIyNzMuMzI5MzUzMzMzMzI4MjQiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIzMDYuNjcxMDg2NjY2NjcwNyIgeT0iMTQ2MC4wNjA5NTAwMDAwMDczIiB3aWR0aD0iMTkuOTk5OTU5OTk5OTk5OTk4IiBoZWlnaHQ9Ijg2LjY2NjQ5MzMzMzMzMzM0Ii8+PHJlY3QgY2xhc3M9InBjYi1wYWQiIGZpbGw9IiNmZmUwNjYiIHg9IjMzOS45OTU4ODY2NjY2Njk1NSIgeT0iMTQ2MC4wNjA5NTAwMDAwMDczIiB3aWR0aD0iMTkuOTk5OTU5OTk5OTk5OTk4IiBoZWlnaHQ9Ijg2LjY2NjQ5MzMzMzMzMzM0Ii8+PHJlY3QgY2xhc3M9InBjYi1wYWQiIGZpbGw9IiNmZmUwNjYiIHg9IjM3My4zMzc2MjAwMDAwMDQ0IiB5PSIxNDYwLjA2MDk1MDAwMDAwNzMiIHdpZHRoPSIxOS45OTk5NTk5OTk5OTk5OTgiIGhlaWdodD0iODYuNjY2NDkzMzMzMzMzMzQiLz48cmVjdCBjbGFzcz0icGNiLXBhZCIgZmlsbD0iI2ZmZTA2NiIgeD0iNDA2LjY2MjQxOTk5OTk5NTYiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI0NDAuMDA0MTUzMzMzMzMwNDYiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI0NzMuMzEyMDE5OTk5OTkzMjUiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI1MDYuNjcwNjg2NjY2NjcxNzciIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIxNjYuNjY2Mjg2NjY2NjY2MTQiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIxODYuNjY0NTUzMzMzMzM0MTciIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIyMjAuMDA2Mjg2NjY2NjY5MDQiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSIyNDAuMDA0NTUzMzMzMzI5NDUiIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI1MzkuOTk1NDg2NjY2NjcwNiIgeT0iMTQ2MC4wNjA5NTAwMDAwMDczIiB3aWR0aD0iMTkuOTk5OTU5OTk5OTk5OTk4IiBoZWlnaHQ9Ijg2LjY2NjQ5MzMzMzMzMzM0Ii8+PHJlY3QgY2xhc3M9InBjYi1wYWQiIGZpbGw9IiNmZmUwNjYiIHg9IjU2MC4wMTA2ODY2NjY2NjciIHk9IjE0NjAuMDYwOTUwMDAwMDA3MyIgd2lkdGg9IjE5Ljk5OTk1OTk5OTk5OTk5OCIgaGVpZ2h0PSI4Ni42NjY0OTMzMzMzMzMzNCIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI1OTMuMzM1NDg2NjY2NjczNCIgeT0iMTQ2MC4wNjA5NTAwMDAwMDczIiB3aWR0aD0iMTkuOTk5OTU5OTk5OTk5OTk4IiBoZWlnaHQ9Ijg2LjY2NjQ5MzMzMzMzMzM0Ii8+PHJlY3QgY2xhc3M9InBjYi1wYWQiIGZpbGw9IiNmZmUwNjYiIHg9IjYxMy4zMzM3NTMzMzMzMzM4IiB5PSIxNDYwLjA2MDk1MDAwMDAwNzMiIHdpZHRoPSIxOS45OTk5NTk5OTk5OTk5OTgiIGhlaWdodD0iODYuNjY2NDkzMzMzMzMzMzQiLz48cmVjdCBjbGFzcz0icGNiLXBhZCIgZmlsbD0iI2ZmZTA2NiIgeD0iMzEwIiB5PSIxNjYuNjY2NjY2NjY2NjY2NTQiIHdpZHRoPSI2Ni42NjY2NjY2NjY2NjY2NyIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIvPjxyZWN0IGNsYXNzPSJwY2ItcGFkIiBmaWxsPSIjZmZlMDY2IiB4PSI0MjMuMzMzMzMzMzMzMzMzMzciIHk9IjE2Ni42NjY2NjY2NjY2NjY1NCIgd2lkdGg9IjY2LjY2NjY2NjY2NjY2NjY3IiBoZWlnaHQ9IjY2LjY2NjY2NjY2NjY2NjY3Ii8+PHJlY3QgY2xhc3M9InBjYi1wYWQiIGZpbGw9IiNmZmUwNjYiIHg9IjMxMCIgeT0iNDk5Ljk5OTk5OTk5OTk5OTk0IiB3aWR0aD0iNjYuNjY2NjY2NjY2NjY2NjciIGhlaWdodD0iNjYuNjY2NjY2NjY2NjY2NjciLz48cmVjdCBjbGFzcz0icGNiLXBhZCIgZmlsbD0iI2ZmZTA2NiIgeD0iNDIzLjMzMzMzMzMzMzMzMzM3IiB5PSI0OTkuOTk5OTk5OTk5OTk5OTQiIHdpZHRoPSI2Ni42NjY2NjY2NjY2NjY2NyIgaGVpZ2h0PSI2Ni42NjY2NjY2NjY2NjY2NyIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSAyMzAuMDA2MjY2NjY2NjY5MDMgMTUwMy4zOTQxOTY2NjY2NzQgTCAyNTAuMDA0NTMzMzMzMzI5NDUgMTUwMy4zOTQxOTY2NjY2NzQiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIiBkYXRhLWxheWVyPSJ0b3AiLz48cGF0aCBjbGFzcz0icGNiLXRyYWNlIiBzdHJva2U9IiNmZmUwNjYiIGZpbGw9Im5vbmUiIGQ9Ik0gMjUwLjAwNDUzMzMzMzMyOTQ1IDE1MDMuMzk0MTk2NjY2Njc0IEwgMjUwLjAwNDUzMzMzMzMyOTQ1IDE1MDMuMzk0MTk2NjY2Njc0IiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PHBhdGggY2xhc3M9InBjYi10cmFjZSIgc3Ryb2tlPSIjZmZlMDY2IiBmaWxsPSJub25lIiBkPSJNIDE4My4zMzgwMDAwMDAwMDMzNSAxMTQ5Ljk5NTQ2NjY2NjY3MDQgTCAyMzAuMDA2MjY2NjY2NjY5MDMgMTE5Ni42NjM3MzMzMzMzMzYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIiBkYXRhLWxheWVyPSJ0b3AiLz48cGF0aCBjbGFzcz0icGNiLXRyYWNlIiBzdHJva2U9IiNmZmUwNjYiIGZpbGw9Im5vbmUiIGQ9Ik0gMjMwLjAwNjI2NjY2NjY2OTAzIDExOTYuNjYzNzMzMzMzMzM2IEwgMjMwLjAwNjI2NjY2NjY2OTAzIDE1MDMuMzk0MTk2NjY2Njc0IiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PHBhdGggY2xhc3M9InBjYi10cmFjZSIgc3Ryb2tlPSIjZmZlMDY2IiBmaWxsPSJub25lIiBkPSJNIDE3Ni42NjYyNjY2NjY2NjYxMyAxNTAzLjM5NDE5NjY2NjY3NCBMIDE5Ni42NjQ1MzMzMzMzMzQxNiAxNTAzLjM5NDE5NjY2NjY3NCIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSAxOTYuNjY0NTMzMzMzMzM0MTYgMTUwMy4zOTQxOTY2NjY2NzQgTCAxOTYuNjY0NTMzMzMzMzM0MTYgMTUwMy4zOTQxOTY2NjY2NzQiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIiBkYXRhLWxheWVyPSJ0b3AiLz48cGF0aCBjbGFzcz0icGNiLXRyYWNlIiBzdHJva2U9IiNmZmUwNjYiIGZpbGw9Im5vbmUiIGQ9Ik0gMTk2LjY2NDUzMzMzMzMzNDE2IDE1MDMuMzk0MTk2NjY2Njc0IEwgMTk2LjY2NDUzMzMzMzMzNDE2IDE0MzcuMjU3NjczNTg5NjA1MiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSAxOTYuNjY0NTMzMzMzMzM0MTYgMTQzNy4yNTc2NzM1ODk2MDUyIEwgMTgxLjI0OTk5OTk5OTk5OTk3IDE0MjEuODQzMTQwMjU2MjcxIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PHBhdGggY2xhc3M9InBjYi10cmFjZSIgc3Ryb2tlPSIjZmZlMDY2IiBmaWxsPSJub25lIiBkPSJNIDE4MS4yNDk5OTk5OTk5OTk5NyAxNDIxLjg0MzE0MDI1NjI3MSBMIDE4MS4yNDk5OTk5OTk5OTk5NyAxNDA2LjI1IiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PHBhdGggY2xhc3M9InBjYi10cmFjZSIgc3Ryb2tlPSIjZmZlMDY2IiBmaWxsPSJub25lIiBkPSJNIDE4MS4yNDk5OTk5OTk5OTk5NyAxNDA2LjI1IEwgMTgxLjI0OTk5OTk5OTk5OTk3IDE0MDYuMjUiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIiBkYXRhLWxheWVyPSJ0b3AiLz48cGF0aCBjbGFzcz0icGNiLXRyYWNlIiBzdHJva2U9IiNmZmUwNjYiIGZpbGw9Im5vbmUiIGQ9Ik0gNDYyLjUgMzEyLjQ5OTk5OTk5OTk5OTkgTCA0NjIuNSAzMTIuNDk5OTk5OTk5OTk5OSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSA0NjIuNSAzMTIuNDk5OTk5OTk5OTk5OSBMIDQ2Mi41IDIwNS44MzMzMzMzMzMzMzMxNCIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSA0NjIuNSAyMDUuODMzMzMzMzMzMzMzMTQgTCA0NTYuNjY2NjY2NjY2NjY2NyAxOTkuOTk5OTk5OTk5OTk5OSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSA0NTYuNjY2NjY2NjY2NjY2NyA1MzMuMzMzMzMzMzMzMzMzMyBMIDM0My4zMzMzMzMzMzMzMzMzIDQxOS45OTk5OTk5OTk5OTk5IiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PHBhdGggY2xhc3M9InBjYi10cmFjZSIgc3Ryb2tlPSIjZmZlMDY2IiBmaWxsPSJub25lIiBkPSJNIDM0My4zMzMzMzMzMzMzMzMzIDQxOS45OTk5OTk5OTk5OTk5IEwgMzQzLjMzMzMzMzMzMzMzMzMgMTk5Ljk5OTk5OTk5OTk5OTkiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIiBkYXRhLWxheWVyPSJ0b3AiLz48cGF0aCBjbGFzcz0icGNiLXRyYWNlIiBzdHJva2U9IiNmZmUwNjYiIGZpbGw9Im5vbmUiIGQ9Ik0gNjE2LjY2MTk5OTk5OTk4OTEgODUwLjAwNDUzMzMzMzMyOTQgTCA2MTYuNjYxOTk5OTk5OTg5MSA4MDYuNjYxOTk5OTk5OTg4OSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIGRhdGEtbGF5ZXI9InRvcCIvPjxwYXRoIGNsYXNzPSJwY2ItdHJhY2UiIHN0cm9rZT0iI2ZmZTA2NiIgZmlsbD0ibm9uZSIgZD0iTSA2MTYuNjYxOTk5OTk5OTg5MSA4MDYuNjYxOTk5OTk5OTg4OSBMIDM0My4zMzMzMzMzMzMzMzMzIDUzMy4zMzMzMzMzMzMzMzMzIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIgZGF0YS1sYXllcj0idG9wIi8+PGc+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUtb3V0ZXIiIGZpbGw9IiNmZmUwNjYiIGN4PSIxODEuMjQ5OTk5OTk5OTk5OTciIGN5PSIxNDA2LjI1IiByPSIyMCIvPjxjaXJjbGUgY2xhc3M9InBjYi1ob2xlLWlubmVyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiIGN4PSIxODEuMjQ5OTk5OTk5OTk5OTciIGN5PSIxNDA2LjI1IiByPSIxMCIvPjwvZz48Zz48Y2lyY2xlIGNsYXNzPSJwY2ItaG9sZS1vdXRlciIgZmlsbD0iI2ZmZTA2NiIgY3g9IjQ2Mi41IiBjeT0iMzEyLjQ5OTk5OTk5OTk5OTkiIHI9IjIwIi8+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUtaW5uZXIiIGZpbGw9InJnYmEoMCwwLDAsMC41KSIgY3g9IjQ2Mi41IiBjeT0iMzEyLjQ5OTk5OTk5OTk5OTkiIHI9IjEwIi8+PC9nPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gMTAyLjA2ODE1OTk5OTk5ODkgMTc2MC4wNDc2NTAwMDAwMDEzIEwgMTAyLjA2ODE1OTk5OTk5ODkgMTYzNS44NTM1MDMzMzMzNDMzIiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfMCIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNjk4LjA2NzMwNjY2NjY3NDQgMjAwNy45Mzk3OTY2NjY2NzIyIEwgMTAyLjA2ODE1OTk5OTk5ODkgMjAwNy45Mzk3OTY2NjY2NzIyIEwgMTAyLjA2ODE1OTk5OTk5ODkgMTkwOS4xODYyOTAwMDAwMDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfMSIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNjk4LjA2NzMwNjY2NjY3NDQgMTc2MC4wNzEzNTY2NjY2NzAyIEwgNjk4LjA2NzMwNjY2NjY3NDQgMTYzNS44Mjk3OTY2NjY2NjY5IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfMiIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNjk4LjA2NzMwNjY2NjY3NDQgMjAwNy45Mzk3OTY2NjY2NzIyIEwgNjk4LjA2NzMwNjY2NjY3NDQgMTkwOS4xNjI1ODMzMzMzNDg1IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfMyIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNDU2LjY2NjY2NjY2NjY2NjcgMTM5Ljk5OTk5OTk5OTk5OTc3IEwgMjk2LjY2NjY2NjY2NjY2NjYzIDEzOS45OTk5OTk5OTk5OTk3NyBMIDI5Ni42NjY2NjY2NjY2NjY2MyAyNTkuOTk5OTk5OTk5OTk5OSBMIDQ1Ni42NjY2NjY2NjY2NjY3IDI1OS45OTk5OTk5OTk5OTk5IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJwY2JfY29tcG9uZW50XzEiIGRhdGEtcGNiLXNpbGtzY3JlZW4tcGF0aC1pZD0icGNiX3NpbGtzY3JlZW5fcGF0aF80Ii8+PHBhdGggY2xhc3M9InBjYi1zaWxrc2NyZWVuIHBjYi1zaWxrc2NyZWVuLXRvcCIgZD0iTSAyNDguMzc4OTMzMzMzMzI1ODIgMTE5OS45OTk2MDAwMDAwMDEgTCA1NTEuNjIxMDY2NjY2NjY2NiAxMTk5Ljk5OTYwMDAwMDAwMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjJlZGExIiBzdHJva2Utd2lkdGg9IjYuNjY2NjY2NjY2NjY2NjY4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGRhdGEtcGNiLWNvbXBvbmVudC1pZD0ibnVsbCIgZGF0YS1wY2Itc2lsa3NjcmVlbi1wYXRoLWlkPSJwY2Jfc2lsa3NjcmVlbl9wYXRoXzUiLz48cGF0aCBjbGFzcz0icGNiLXNpbGtzY3JlZW4gcGNiLXNpbGtzY3JlZW4tdG9wIiBkPSJNIDIwMC4wMDAzOTk5OTk5OTE0IDkyNi42NjY4MTMzMzMzMjY4IEwgMjAwLjAwMDM5OTk5OTk5MTQgMTA2Ni42NjY1MzMzMzMzMzM1IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfNiIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNjA2LjY2NjI1MzMzMzMyNTQgOTMxLjQ2NzQxMzMzMzMzMzEgTCA2MDYuNjY2MjUzMzMzMzI1NCAxMDczLjMzMzE4NjY2NjY2NTQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YyZWRhMSIgc3Ryb2tlLXdpZHRoPSI2LjY2NjY2NjY2NjY2NjY2OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkYXRhLXBjYi1jb21wb25lbnQtaWQ9Im51bGwiIGRhdGEtcGNiLXNpbGtzY3JlZW4tcGF0aC1pZD0icGNiX3NpbGtzY3JlZW5fcGF0aF83Ii8+PHBhdGggY2xhc3M9InBjYi1zaWxrc2NyZWVuIHBjYi1zaWxrc2NyZWVuLXRvcCIgZD0iTSAyNjYuNjY2OTMzMzMzMzMyNiA4MDAuMDAwMzk5OTk5OTk4OSBMIDU1MS42MjEwNjY2NjY2NjY2IDgwMC4wMDAzOTk5OTk5OTg5IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJudWxsIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXBhdGgtaWQ9InBjYl9zaWxrc2NyZWVuX3BhdGhfOCIvPjxwYXRoIGNsYXNzPSJwY2Itc2lsa3NjcmVlbiBwY2Itc2lsa3NjcmVlbi10b3AiIGQ9Ik0gNDU2LjY2NjY2NjY2NjY2NjcgNDczLjMzMzMzMzMzMzMzMzE0IEwgMjk2LjY2NjY2NjY2NjY2NjYzIDQ3My4zMzMzMzMzMzMzMzMxNCBMIDI5Ni42NjY2NjY2NjY2NjY2MyA1OTMuMzMzMzMzMzMzMzMzMyBMIDQ1Ni42NjY2NjY2NjY2NjY3IDU5My4zMzMzMzMzMzMzMzMzIiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmVkYTEiIHN0cm9rZS13aWR0aD0iNi42NjY2NjY2NjY2NjY2NjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZGF0YS1wY2ItY29tcG9uZW50LWlkPSJwY2JfY29tcG9uZW50XzMiIGRhdGEtcGNiLXNpbGtzY3JlZW4tcGF0aC1pZD0icGNiX3NpbGtzY3JlZW5fcGF0aF85Ii8+PHRleHQgeD0iMCIgeT0iMCIgZHg9IjAiIGR5PSIwIiBmaWxsPSIjZjJlZGExIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjYuNjY2NjY2NjY2NjY2NjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDQwMCwxMDYuNjY2NjY2NjY2NjY2NTIpIiBjbGFzcz0icGNiLXNpbGtzY3JlZW4tdGV4dCBwY2Itc2lsa3NjcmVlbi10b3AiIGRhdGEtcGNiLXNpbGtzY3JlZW4tdGV4dC1pZD0icGNiX2NvbXBvbmVudF8xIiBzdHJva2U9Im5vbmUiPkxFRDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBkeD0iMCIgZHk9IjAiIGZpbGw9IiNmMmVkYTEiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNi42NjY2NjY2NjY2NjY2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNDAwLDQzOS45OTk5OTk5OTk5OTk4KSIgY2xhc3M9InBjYi1zaWxrc2NyZWVuLXRleHQgcGNiLXNpbGtzY3JlZW4tdG9wIiBkYXRhLXBjYi1zaWxrc2NyZWVuLXRleHQtaWQ9InBjYl9jb21wb25lbnRfMyIgc3Ryb2tlPSJub25lIj5SMTwvdGV4dD48Zz48cGF0aCBjbGFzcz0icGNiLWhvbGUtb3V0ZXIiIGZpbGw9IiNmZmUwNjYiIGQ9Ik02NDguMzQwODc5OTk5OTk5NCwxODMxLjYwNTc5NjY2NjY2MyB2MzkuOTk5OTIwMDAwMDAwMDIgYTM5Ljk5OTkxOTk5OTk5OTk5NiwzOS45OTk5MTk5OTk5OTk5OTYgMCAwIDAgNzkuOTk5ODM5OTk5OTk5OTksMCB2LTM5Ljk5OTkyMDAwMDAwMDAyIGEzOS45OTk5MTk5OTk5OTk5OTYsMzkuOTk5OTE5OTk5OTk5OTk2IDAgMCAwIC03OS45OTk4Mzk5OTk5OTk5OSwwIHoiLz48cGF0aCBjbGFzcz0icGNiLWhvbGUtaW5uZXIiIGZpbGw9InJnYmEoMCwwLDAsMC41KSIgZD0iTTY2MS42NzQxODY2NjY2NjYxLDE4MzEuNjA1Nzk2NjY2NjYzIHYzOS45OTk5MjAwMDAwMDAwMiBhMjYuNjY2NjEzMzMzMzMzMzMsMjYuNjY2NjEzMzMzMzMzMzMgMCAwIDAgNTMuMzMzMjI2NjY2NjY2NjYsMCB2LTM5Ljk5OTkyMDAwMDAwMDAyIGEyNi42NjY2MTMzMzMzMzMzMywyNi42NjY2MTMzMzMzMzMzMyAwIDAgMCAtNTMuMzMzMjI2NjY2NjY2NjYsMCB6Ii8+PC9nPjxnPjxwYXRoIGNsYXNzPSJwY2ItaG9sZS1vdXRlciIgZmlsbD0iI2ZmZTA2NiIgZD0iTTY0OC4zNDA4Nzk5OTk5OTk0LDE1NDYuMjg0MjEwMDAwMDA4IHY1My4zMzMyMjY2NjY2NjY2NzUgYTM5Ljk5OTkxOTk5OTk5OTk5NiwzOS45OTk5MTk5OTk5OTk5OTYgMCAwIDAgNzkuOTk5ODM5OTk5OTk5OTksMCB2LTUzLjMzMzIyNjY2NjY2NjY3NSBhMzkuOTk5OTE5OTk5OTk5OTk2LDM5Ljk5OTkxOTk5OTk5OTk5NiAwIDAgMCAtNzkuOTk5ODM5OTk5OTk5OTksMCB6Ii8+PHBhdGggY2xhc3M9InBjYi1ob2xlLWlubmVyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiIGQ9Ik02NjEuNjc0MTg2NjY2NjY2MSwxNTQ2LjI4NDIxMDAwMDAwOCB2NTMuMzMzMjI2NjY2NjY2Njc1IGEyNi42NjY2MTMzMzMzMzMzMywyNi42NjY2MTMzMzMzMzMzMyAwIDAgMCA1My4zMzMyMjY2NjY2NjY2NiwwIHYtNTMuMzMzMjI2NjY2NjY2Njc1IGEyNi42NjY2MTMzMzMzMzMzMywyNi42NjY2MTMzMzMzMzMzMyAwIDAgMCAtNTMuMzMzMjI2NjY2NjY2NjYsMCB6Ii8+PC9nPjxnPjxwYXRoIGNsYXNzPSJwY2ItaG9sZS1vdXRlciIgZmlsbD0iI2ZmZTA2NiIgZD0iTTcxLjY1OTI4MDAwMDAwMDYyLDE1NDYuMjg0MjEwMDAwMDA4IHY1My4zMzMyMjY2NjY2NjY2NzUgYTM5Ljk5OTkxOTk5OTk5OTk5NiwzOS45OTk5MTk5OTk5OTk5OTYgMCAwIDAgNzkuOTk5ODM5OTk5OTk5OTksMCB2LTUzLjMzMzIyNjY2NjY2NjY3NSBhMzkuOTk5OTE5OTk5OTk5OTk2LDM5Ljk5OTkxOTk5OTk5OTk5NiAwIDAgMCAtNzkuOTk5ODM5OTk5OTk5OTksMCB6Ii8+PHBhdGggY2xhc3M9InBjYi1ob2xlLWlubmVyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiIGQ9Ik04NC45OTI1ODY2NjY2NjczLDE1NDYuMjg0MjEwMDAwMDA4IHY1My4zMzMyMjY2NjY2NjY2NzUgYTI2LjY2NjYxMzMzMzMzMzMzLDI2LjY2NjYxMzMzMzMzMzMzIDAgMCAwIDUzLjMzMzIyNjY2NjY2NjY2LDAgdi01My4zMzMyMjY2NjY2NjY2NzUgYTI2LjY2NjYxMzMzMzMzMzMzLDI2LjY2NjYxMzMzMzMzMzMzIDAgMCAwIC01My4zMzMyMjY2NjY2NjY2NiwwIHoiLz48L2c+PGc+PHBhdGggY2xhc3M9InBjYi1ob2xlLW91dGVyIiBmaWxsPSIjZmZlMDY2IiBkPSJNNzEuNjU5MjgwMDAwMDAwNjIsMTgzMS42MDU3OTY2NjY2NjMgdjM5Ljk5OTkyMDAwMDAwMDAyIGEzOS45OTk5MTk5OTk5OTk5OTYsMzkuOTk5OTE5OTk5OTk5OTk2IDAgMCAwIDc5Ljk5OTgzOTk5OTk5OTk5LDAgdi0zOS45OTk5MjAwMDAwMDAwMiBhMzkuOTk5OTE5OTk5OTk5OTk2LDM5Ljk5OTkxOTk5OTk5OTk5NiAwIDAgMCAtNzkuOTk5ODM5OTk5OTk5OTksMCB6Ii8+PHBhdGggY2xhc3M9InBjYi1ob2xlLWlubmVyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiIGQ9Ik04NC45OTI1ODY2NjY2NjczLDE4MzEuNjA1Nzk2NjY2NjYzIHYzOS45OTk5MjAwMDAwMDAwMiBhMjYuNjY2NjEzMzMzMzMzMzMsMjYuNjY2NjEzMzMzMzMzMzMgMCAwIDAgNTMuMzMzMjI2NjY2NjY2NjYsMCB2LTM5Ljk5OTkyMDAwMDAwMDAyIGEyNi42NjY2MTMzMzMzMzMzMywyNi42NjY2MTMzMzMzMzMzMyAwIDAgMCAtNTMuMzMzMjI2NjY2NjY2NjYsMCB6Ii8+PC9nPjxnPjxjaXJjbGUgY2xhc3M9InBjYi1ob2xlLW91dGVyIiBmaWxsPSIjZmZlMDY2IiBjeD0iNjE2LjY2MTk5OTk5OTk4OTEiIGN5PSIxMTQ5Ljk5NTQ2NjY2NjY3MDQiIHI9IjY2LjY2NjUzMzMzMzMzMzMzIi8+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUtaW5uZXIiIGZpbGw9InJnYmEoMCwwLDAsMC41KSIgY3g9IjYxNi42NjE5OTk5OTk5ODkxIiBjeT0iMTE0OS45OTU0NjY2NjY2NzA0IiByPSI0My4zMzQwOTMzMzMzMzMzMzUiLz48L2c+PGc+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUtb3V0ZXIiIGZpbGw9IiNmZmUwNjYiIGN4PSI2MTYuNjYxOTk5OTk5OTg5MSIgY3k9Ijg1MC4wMDQ1MzMzMzMzMjk0IiByPSI2Ni42NjY1MzMzMzMzMzMzMyIvPjxjaXJjbGUgY2xhc3M9InBjYi1ob2xlLWlubmVyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiIGN4PSI2MTYuNjYxOTk5OTk5OTg5MSIgY3k9Ijg1MC4wMDQ1MzMzMzMzMjk0IiByPSI0My4zMzQwOTMzMzMzMzMzMzUiLz48L2c+PGc+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUtb3V0ZXIiIGZpbGw9IiNmZmUwNjYiIGN4PSIxODMuMzM4MDAwMDAwMDAzMzUiIGN5PSI4NTAuMDA0NTMzMzMzMzI5NCIgcj0iNjYuNjY2NTMzMzMzMzMzMzMiLz48Y2lyY2xlIGNsYXNzPSJwY2ItaG9sZS1pbm5lciIgZmlsbD0icmdiYSgwLDAsMCwwLjUpIiBjeD0iMTgzLjMzODAwMDAwMDAwMzM1IiBjeT0iODUwLjAwNDUzMzMzMzMyOTQiIHI9IjQzLjMzNDA5MzMzMzMzMzMzNSIvPjwvZz48Zz48Y2lyY2xlIGNsYXNzPSJwY2ItaG9sZS1vdXRlciIgZmlsbD0iI2ZmZTA2NiIgY3g9IjE4My4zMzgwMDAwMDAwMDMzNSIgY3k9IjExNDkuOTk1NDY2NjY2NjcwNCIgcj0iNjYuNjY2NTMzMzMzMzMzMzMiLz48Y2lyY2xlIGNsYXNzPSJwY2ItaG9sZS1pbm5lciIgZmlsbD0icmdiYSgwLDAsMCwwLjUpIiBjeD0iMTgzLjMzODAwMDAwMDAwMzM1IiBjeT0iMTE0OS45OTU0NjY2NjY2NzA0IiByPSI0My4zMzQwOTMzMzMzMzMzMzUiLz48L2c+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUiIGN4PSIyMDYuNjcyMTMzMzMzMzI4NjIiIGN5PSIxNTg3Ljk1OTI2MzMzMzMzODIiIHI9IjI1LjAwMDM3MzMzMzMzMzMzMiIgZmlsbD0icmdiYSgwLDAsMCwwLjUpIi8+PGNpcmNsZSBjbGFzcz0icGNiLWhvbGUiIGN4PSI1OTMuMzI3ODY2NjY2NjcxNCIgY3k9IjE1ODcuOTU5MjYzMzMzMzM4MiIgcj0iMjUuMDAwMzczMzMzMzMzMzMyIiBmaWxsPSJyZ2JhKDAsMCwwLDAuNSkiLz48L3N2Zz4=" width="1" height="1" preserveAspectRatio="none" style="image-rendering:pixelated"/>
+    <clipPath id="clip0" clipPathUnits="objectBoundingBox"><polygon points="0,0 0.1,0 0.1,0.1" /></clipPath>
+    <clipPath id="clip1" clipPathUnits="objectBoundingBox"><polygon points="0,0 0.1,0.1 0,0.1" /></clipPath>
+    <clipPath id="clip2" clipPathUnits="objectBoundingBox"><polygon points="0.1,0 0.2,0 0.2,0.1" /></clipPath>
+    <clipPath id="clip3" clipPathUnits="objectBoundingBox"><polygon points="0.1,0 0.2,0.1 0.1,0.1" /></clipPath>
+    <clipPath id="clip4" clipPathUnits="objectBoundingBox"><polygon points="0.2,0 0.3,0 0.3,0.1" /></clipPath>
+    <clipPath id="clip5" clipPathUnits="objectBoundingBox"><polygon points="0.2,0 0.3,0.1 0.2,0.1" /></clipPath>
+    <clipPath id="clip6" clipPathUnits="objectBoundingBox"><polygon points="0.3,0 0.4,0 0.4,0.1" /></clipPath>
+    <clipPath id="clip7" clipPathUnits="objectBoundingBox"><polygon points="0.3,0 0.4,0.1 0.3,0.1" /></clipPath>
+    <clipPath id="clip8" clipPathUnits="objectBoundingBox"><polygon points="0.4,0 0.5,0 0.5,0.1" /></clipPath>
+    <clipPath id="clip9" clipPathUnits="objectBoundingBox"><polygon points="0.4,0 0.5,0.1 0.4,0.1" /></clipPath>
+    <clipPath id="clip10" clipPathUnits="objectBoundingBox"><polygon points="0.5,0 0.6,0 0.6,0.1" /></clipPath>
+    <clipPath id="clip11" clipPathUnits="objectBoundingBox"><polygon points="0.5,0 0.6,0.1 0.5,0.1" /></clipPath>
+    <clipPath id="clip12" clipPathUnits="objectBoundingBox"><polygon points="0.6,0 0.7,0 0.7,0.1" /></clipPath>
+    <clipPath id="clip13" clipPathUnits="objectBoundingBox"><polygon points="0.6,0 0.7,0.1 0.6,0.1" /></clipPath>
+    <clipPath id="clip14" clipPathUnits="objectBoundingBox"><polygon points="0.7,0 0.8,0 0.8,0.1" /></clipPath>
+    <clipPath id="clip15" clipPathUnits="objectBoundingBox"><polygon points="0.7,0 0.8,0.1 0.7,0.1" /></clipPath>
+    <clipPath id="clip16" clipPathUnits="objectBoundingBox"><polygon points="0.8,0 0.9,0 0.9,0.1" /></clipPath>
+    <clipPath id="clip17" clipPathUnits="objectBoundingBox"><polygon points="0.8,0 0.9,0.1 0.8,0.1" /></clipPath>
+    <clipPath id="clip18" clipPathUnits="objectBoundingBox"><polygon points="0.9,0 1,0 1,0.1" /></clipPath>
+    <clipPath id="clip19" clipPathUnits="objectBoundingBox"><polygon points="0.9,0 1,0.1 0.9,0.1" /></clipPath>
+    <clipPath id="clip20" clipPathUnits="objectBoundingBox"><polygon points="0,0.1 0.1,0.1 0.1,0.2" /></clipPath>
+    <clipPath id="clip21" clipPathUnits="objectBoundingBox"><polygon points="0,0.1 0.1,0.2 0,0.2" /></clipPath>
+    <clipPath id="clip22" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.1 0.2,0.1 0.2,0.2" /></clipPath>
+    <clipPath id="clip23" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.1 0.2,0.2 0.1,0.2" /></clipPath>
+    <clipPath id="clip24" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.1 0.3,0.1 0.3,0.2" /></clipPath>
+    <clipPath id="clip25" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.1 0.3,0.2 0.2,0.2" /></clipPath>
+    <clipPath id="clip26" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.1 0.4,0.1 0.4,0.2" /></clipPath>
+    <clipPath id="clip27" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.1 0.4,0.2 0.3,0.2" /></clipPath>
+    <clipPath id="clip28" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.1 0.5,0.1 0.5,0.2" /></clipPath>
+    <clipPath id="clip29" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.1 0.5,0.2 0.4,0.2" /></clipPath>
+    <clipPath id="clip30" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.1 0.6,0.1 0.6,0.2" /></clipPath>
+    <clipPath id="clip31" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.1 0.6,0.2 0.5,0.2" /></clipPath>
+    <clipPath id="clip32" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.1 0.7,0.1 0.7,0.2" /></clipPath>
+    <clipPath id="clip33" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.1 0.7,0.2 0.6,0.2" /></clipPath>
+    <clipPath id="clip34" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.1 0.8,0.1 0.8,0.2" /></clipPath>
+    <clipPath id="clip35" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.1 0.8,0.2 0.7,0.2" /></clipPath>
+    <clipPath id="clip36" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.1 0.9,0.1 0.9,0.2" /></clipPath>
+    <clipPath id="clip37" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.1 0.9,0.2 0.8,0.2" /></clipPath>
+    <clipPath id="clip38" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.1 1,0.1 1,0.2" /></clipPath>
+    <clipPath id="clip39" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.1 1,0.2 0.9,0.2" /></clipPath>
+    <clipPath id="clip40" clipPathUnits="objectBoundingBox"><polygon points="0,0.2 0.1,0.2 0.1,0.3" /></clipPath>
+    <clipPath id="clip41" clipPathUnits="objectBoundingBox"><polygon points="0,0.2 0.1,0.3 0,0.3" /></clipPath>
+    <clipPath id="clip42" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.2 0.2,0.2 0.2,0.3" /></clipPath>
+    <clipPath id="clip43" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.2 0.2,0.3 0.1,0.3" /></clipPath>
+    <clipPath id="clip44" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.2 0.3,0.2 0.3,0.3" /></clipPath>
+    <clipPath id="clip45" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.2 0.3,0.3 0.2,0.3" /></clipPath>
+    <clipPath id="clip46" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.2 0.4,0.2 0.4,0.3" /></clipPath>
+    <clipPath id="clip47" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.2 0.4,0.3 0.3,0.3" /></clipPath>
+    <clipPath id="clip48" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.2 0.5,0.2 0.5,0.3" /></clipPath>
+    <clipPath id="clip49" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.2 0.5,0.3 0.4,0.3" /></clipPath>
+    <clipPath id="clip50" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.2 0.6,0.2 0.6,0.3" /></clipPath>
+    <clipPath id="clip51" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.2 0.6,0.3 0.5,0.3" /></clipPath>
+    <clipPath id="clip52" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.2 0.7,0.2 0.7,0.3" /></clipPath>
+    <clipPath id="clip53" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.2 0.7,0.3 0.6,0.3" /></clipPath>
+    <clipPath id="clip54" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.2 0.8,0.2 0.8,0.3" /></clipPath>
+    <clipPath id="clip55" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.2 0.8,0.3 0.7,0.3" /></clipPath>
+    <clipPath id="clip56" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.2 0.9,0.2 0.9,0.3" /></clipPath>
+    <clipPath id="clip57" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.2 0.9,0.3 0.8,0.3" /></clipPath>
+    <clipPath id="clip58" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.2 1,0.2 1,0.3" /></clipPath>
+    <clipPath id="clip59" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.2 1,0.3 0.9,0.3" /></clipPath>
+    <clipPath id="clip60" clipPathUnits="objectBoundingBox"><polygon points="0,0.3 0.1,0.3 0.1,0.4" /></clipPath>
+    <clipPath id="clip61" clipPathUnits="objectBoundingBox"><polygon points="0,0.3 0.1,0.4 0,0.4" /></clipPath>
+    <clipPath id="clip62" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.3 0.2,0.3 0.2,0.4" /></clipPath>
+    <clipPath id="clip63" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.3 0.2,0.4 0.1,0.4" /></clipPath>
+    <clipPath id="clip64" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.3 0.3,0.3 0.3,0.4" /></clipPath>
+    <clipPath id="clip65" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.3 0.3,0.4 0.2,0.4" /></clipPath>
+    <clipPath id="clip66" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.3 0.4,0.3 0.4,0.4" /></clipPath>
+    <clipPath id="clip67" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.3 0.4,0.4 0.3,0.4" /></clipPath>
+    <clipPath id="clip68" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.3 0.5,0.3 0.5,0.4" /></clipPath>
+    <clipPath id="clip69" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.3 0.5,0.4 0.4,0.4" /></clipPath>
+    <clipPath id="clip70" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.3 0.6,0.3 0.6,0.4" /></clipPath>
+    <clipPath id="clip71" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.3 0.6,0.4 0.5,0.4" /></clipPath>
+    <clipPath id="clip72" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.3 0.7,0.3 0.7,0.4" /></clipPath>
+    <clipPath id="clip73" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.3 0.7,0.4 0.6,0.4" /></clipPath>
+    <clipPath id="clip74" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.3 0.8,0.3 0.8,0.4" /></clipPath>
+    <clipPath id="clip75" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.3 0.8,0.4 0.7,0.4" /></clipPath>
+    <clipPath id="clip76" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.3 0.9,0.3 0.9,0.4" /></clipPath>
+    <clipPath id="clip77" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.3 0.9,0.4 0.8,0.4" /></clipPath>
+    <clipPath id="clip78" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.3 1,0.3 1,0.4" /></clipPath>
+    <clipPath id="clip79" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.3 1,0.4 0.9,0.4" /></clipPath>
+    <clipPath id="clip80" clipPathUnits="objectBoundingBox"><polygon points="0,0.4 0.1,0.4 0.1,0.5" /></clipPath>
+    <clipPath id="clip81" clipPathUnits="objectBoundingBox"><polygon points="0,0.4 0.1,0.5 0,0.5" /></clipPath>
+    <clipPath id="clip82" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.4 0.2,0.4 0.2,0.5" /></clipPath>
+    <clipPath id="clip83" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.4 0.2,0.5 0.1,0.5" /></clipPath>
+    <clipPath id="clip84" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.4 0.3,0.4 0.3,0.5" /></clipPath>
+    <clipPath id="clip85" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.4 0.3,0.5 0.2,0.5" /></clipPath>
+    <clipPath id="clip86" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.4 0.4,0.4 0.4,0.5" /></clipPath>
+    <clipPath id="clip87" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.4 0.4,0.5 0.3,0.5" /></clipPath>
+    <clipPath id="clip88" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.4 0.5,0.4 0.5,0.5" /></clipPath>
+    <clipPath id="clip89" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.4 0.5,0.5 0.4,0.5" /></clipPath>
+    <clipPath id="clip90" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.4 0.6,0.4 0.6,0.5" /></clipPath>
+    <clipPath id="clip91" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.4 0.6,0.5 0.5,0.5" /></clipPath>
+    <clipPath id="clip92" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.4 0.7,0.4 0.7,0.5" /></clipPath>
+    <clipPath id="clip93" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.4 0.7,0.5 0.6,0.5" /></clipPath>
+    <clipPath id="clip94" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.4 0.8,0.4 0.8,0.5" /></clipPath>
+    <clipPath id="clip95" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.4 0.8,0.5 0.7,0.5" /></clipPath>
+    <clipPath id="clip96" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.4 0.9,0.4 0.9,0.5" /></clipPath>
+    <clipPath id="clip97" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.4 0.9,0.5 0.8,0.5" /></clipPath>
+    <clipPath id="clip98" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.4 1,0.4 1,0.5" /></clipPath>
+    <clipPath id="clip99" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.4 1,0.5 0.9,0.5" /></clipPath>
+    <clipPath id="clip100" clipPathUnits="objectBoundingBox"><polygon points="0,0.5 0.1,0.5 0.1,0.6" /></clipPath>
+    <clipPath id="clip101" clipPathUnits="objectBoundingBox"><polygon points="0,0.5 0.1,0.6 0,0.6" /></clipPath>
+    <clipPath id="clip102" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.5 0.2,0.5 0.2,0.6" /></clipPath>
+    <clipPath id="clip103" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.5 0.2,0.6 0.1,0.6" /></clipPath>
+    <clipPath id="clip104" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.5 0.3,0.5 0.3,0.6" /></clipPath>
+    <clipPath id="clip105" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.5 0.3,0.6 0.2,0.6" /></clipPath>
+    <clipPath id="clip106" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.5 0.4,0.5 0.4,0.6" /></clipPath>
+    <clipPath id="clip107" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.5 0.4,0.6 0.3,0.6" /></clipPath>
+    <clipPath id="clip108" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.5 0.5,0.5 0.5,0.6" /></clipPath>
+    <clipPath id="clip109" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.5 0.5,0.6 0.4,0.6" /></clipPath>
+    <clipPath id="clip110" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.5 0.6,0.5 0.6,0.6" /></clipPath>
+    <clipPath id="clip111" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.5 0.6,0.6 0.5,0.6" /></clipPath>
+    <clipPath id="clip112" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.5 0.7,0.5 0.7,0.6" /></clipPath>
+    <clipPath id="clip113" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.5 0.7,0.6 0.6,0.6" /></clipPath>
+    <clipPath id="clip114" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.5 0.8,0.5 0.8,0.6" /></clipPath>
+    <clipPath id="clip115" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.5 0.8,0.6 0.7,0.6" /></clipPath>
+    <clipPath id="clip116" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.5 0.9,0.5 0.9,0.6" /></clipPath>
+    <clipPath id="clip117" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.5 0.9,0.6 0.8,0.6" /></clipPath>
+    <clipPath id="clip118" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.5 1,0.5 1,0.6" /></clipPath>
+    <clipPath id="clip119" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.5 1,0.6 0.9,0.6" /></clipPath>
+    <clipPath id="clip120" clipPathUnits="objectBoundingBox"><polygon points="0,0.6 0.1,0.6 0.1,0.7" /></clipPath>
+    <clipPath id="clip121" clipPathUnits="objectBoundingBox"><polygon points="0,0.6 0.1,0.7 0,0.7" /></clipPath>
+    <clipPath id="clip122" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.6 0.2,0.6 0.2,0.7" /></clipPath>
+    <clipPath id="clip123" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.6 0.2,0.7 0.1,0.7" /></clipPath>
+    <clipPath id="clip124" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.6 0.3,0.6 0.3,0.7" /></clipPath>
+    <clipPath id="clip125" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.6 0.3,0.7 0.2,0.7" /></clipPath>
+    <clipPath id="clip126" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.6 0.4,0.6 0.4,0.7" /></clipPath>
+    <clipPath id="clip127" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.6 0.4,0.7 0.3,0.7" /></clipPath>
+    <clipPath id="clip128" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.6 0.5,0.6 0.5,0.7" /></clipPath>
+    <clipPath id="clip129" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.6 0.5,0.7 0.4,0.7" /></clipPath>
+    <clipPath id="clip130" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.6 0.6,0.6 0.6,0.7" /></clipPath>
+    <clipPath id="clip131" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.6 0.6,0.7 0.5,0.7" /></clipPath>
+    <clipPath id="clip132" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.6 0.7,0.6 0.7,0.7" /></clipPath>
+    <clipPath id="clip133" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.6 0.7,0.7 0.6,0.7" /></clipPath>
+    <clipPath id="clip134" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.6 0.8,0.6 0.8,0.7" /></clipPath>
+    <clipPath id="clip135" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.6 0.8,0.7 0.7,0.7" /></clipPath>
+    <clipPath id="clip136" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.6 0.9,0.6 0.9,0.7" /></clipPath>
+    <clipPath id="clip137" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.6 0.9,0.7 0.8,0.7" /></clipPath>
+    <clipPath id="clip138" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.6 1,0.6 1,0.7" /></clipPath>
+    <clipPath id="clip139" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.6 1,0.7 0.9,0.7" /></clipPath>
+    <clipPath id="clip140" clipPathUnits="objectBoundingBox"><polygon points="0,0.7 0.1,0.7 0.1,0.8" /></clipPath>
+    <clipPath id="clip141" clipPathUnits="objectBoundingBox"><polygon points="0,0.7 0.1,0.8 0,0.8" /></clipPath>
+    <clipPath id="clip142" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.7 0.2,0.7 0.2,0.8" /></clipPath>
+    <clipPath id="clip143" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.7 0.2,0.8 0.1,0.8" /></clipPath>
+    <clipPath id="clip144" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.7 0.3,0.7 0.3,0.8" /></clipPath>
+    <clipPath id="clip145" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.7 0.3,0.8 0.2,0.8" /></clipPath>
+    <clipPath id="clip146" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.7 0.4,0.7 0.4,0.8" /></clipPath>
+    <clipPath id="clip147" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.7 0.4,0.8 0.3,0.8" /></clipPath>
+    <clipPath id="clip148" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.7 0.5,0.7 0.5,0.8" /></clipPath>
+    <clipPath id="clip149" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.7 0.5,0.8 0.4,0.8" /></clipPath>
+    <clipPath id="clip150" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.7 0.6,0.7 0.6,0.8" /></clipPath>
+    <clipPath id="clip151" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.7 0.6,0.8 0.5,0.8" /></clipPath>
+    <clipPath id="clip152" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.7 0.7,0.7 0.7,0.8" /></clipPath>
+    <clipPath id="clip153" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.7 0.7,0.8 0.6,0.8" /></clipPath>
+    <clipPath id="clip154" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.7 0.8,0.7 0.8,0.8" /></clipPath>
+    <clipPath id="clip155" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.7 0.8,0.8 0.7,0.8" /></clipPath>
+    <clipPath id="clip156" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.7 0.9,0.7 0.9,0.8" /></clipPath>
+    <clipPath id="clip157" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.7 0.9,0.8 0.8,0.8" /></clipPath>
+    <clipPath id="clip158" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.7 1,0.7 1,0.8" /></clipPath>
+    <clipPath id="clip159" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.7 1,0.8 0.9,0.8" /></clipPath>
+    <clipPath id="clip160" clipPathUnits="objectBoundingBox"><polygon points="0,0.8 0.1,0.8 0.1,0.9" /></clipPath>
+    <clipPath id="clip161" clipPathUnits="objectBoundingBox"><polygon points="0,0.8 0.1,0.9 0,0.9" /></clipPath>
+    <clipPath id="clip162" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.8 0.2,0.8 0.2,0.9" /></clipPath>
+    <clipPath id="clip163" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.8 0.2,0.9 0.1,0.9" /></clipPath>
+    <clipPath id="clip164" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.8 0.3,0.8 0.3,0.9" /></clipPath>
+    <clipPath id="clip165" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.8 0.3,0.9 0.2,0.9" /></clipPath>
+    <clipPath id="clip166" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.8 0.4,0.8 0.4,0.9" /></clipPath>
+    <clipPath id="clip167" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.8 0.4,0.9 0.3,0.9" /></clipPath>
+    <clipPath id="clip168" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.8 0.5,0.8 0.5,0.9" /></clipPath>
+    <clipPath id="clip169" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.8 0.5,0.9 0.4,0.9" /></clipPath>
+    <clipPath id="clip170" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.8 0.6,0.8 0.6,0.9" /></clipPath>
+    <clipPath id="clip171" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.8 0.6,0.9 0.5,0.9" /></clipPath>
+    <clipPath id="clip172" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.8 0.7,0.8 0.7,0.9" /></clipPath>
+    <clipPath id="clip173" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.8 0.7,0.9 0.6,0.9" /></clipPath>
+    <clipPath id="clip174" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.8 0.8,0.8 0.8,0.9" /></clipPath>
+    <clipPath id="clip175" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.8 0.8,0.9 0.7,0.9" /></clipPath>
+    <clipPath id="clip176" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.8 0.9,0.8 0.9,0.9" /></clipPath>
+    <clipPath id="clip177" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.8 0.9,0.9 0.8,0.9" /></clipPath>
+    <clipPath id="clip178" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.8 1,0.8 1,0.9" /></clipPath>
+    <clipPath id="clip179" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.8 1,0.9 0.9,0.9" /></clipPath>
+    <clipPath id="clip180" clipPathUnits="objectBoundingBox"><polygon points="0,0.9 0.1,0.9 0.1,1" /></clipPath>
+    <clipPath id="clip181" clipPathUnits="objectBoundingBox"><polygon points="0,0.9 0.1,1 0,1" /></clipPath>
+    <clipPath id="clip182" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.9 0.2,0.9 0.2,1" /></clipPath>
+    <clipPath id="clip183" clipPathUnits="objectBoundingBox"><polygon points="0.1,0.9 0.2,1 0.1,1" /></clipPath>
+    <clipPath id="clip184" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.9 0.3,0.9 0.3,1" /></clipPath>
+    <clipPath id="clip185" clipPathUnits="objectBoundingBox"><polygon points="0.2,0.9 0.3,1 0.2,1" /></clipPath>
+    <clipPath id="clip186" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.9 0.4,0.9 0.4,1" /></clipPath>
+    <clipPath id="clip187" clipPathUnits="objectBoundingBox"><polygon points="0.3,0.9 0.4,1 0.3,1" /></clipPath>
+    <clipPath id="clip188" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.9 0.5,0.9 0.5,1" /></clipPath>
+    <clipPath id="clip189" clipPathUnits="objectBoundingBox"><polygon points="0.4,0.9 0.5,1 0.4,1" /></clipPath>
+    <clipPath id="clip190" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.9 0.6,0.9 0.6,1" /></clipPath>
+    <clipPath id="clip191" clipPathUnits="objectBoundingBox"><polygon points="0.5,0.9 0.6,1 0.5,1" /></clipPath>
+    <clipPath id="clip192" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.9 0.7,0.9 0.7,1" /></clipPath>
+    <clipPath id="clip193" clipPathUnits="objectBoundingBox"><polygon points="0.6,0.9 0.7,1 0.6,1" /></clipPath>
+    <clipPath id="clip194" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.9 0.8,0.9 0.8,1" /></clipPath>
+    <clipPath id="clip195" clipPathUnits="objectBoundingBox"><polygon points="0.7,0.9 0.8,1 0.7,1" /></clipPath>
+    <clipPath id="clip196" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.9 0.9,0.9 0.9,1" /></clipPath>
+    <clipPath id="clip197" clipPathUnits="objectBoundingBox"><polygon points="0.8,0.9 0.9,1 0.8,1" /></clipPath>
+    <clipPath id="clip198" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.9 1,0.9 1,1" /></clipPath>
+    <clipPath id="clip199" clipPathUnits="objectBoundingBox"><polygon points="0.9,0.9 1,1 0.9,1" /></clipPath>
+  </defs>
+  <g stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <polygon fill="rgba(0,140,0,0.8)" points="136.5741413510162,-21.402446117052463 53.11634465364449,-50.08900194411258 53.69594623209424,-57.869222154783714 138.21819808267077,-29.640116580261587" />
+    <polygon fill="rgba(0,140,0,0.8)" points="-78.55404676827465,84.65930675551596 -161.23145874638521,34.57518112622289 53.11634465364449,-50.08900194411258 136.5741413510162,-21.402446117052463" />
+    <polygon fill="rgba(0,140,0,0.8)" points="-161.23145874638521,34.57518112622289 -163.52773588010788,25.626326632523647 53.69594623209424,-57.869222154783714 53.11634465364449,-50.08900194411258" />
+    <polygon fill="rgba(0,140,0,0.8)" points="-79.8283881990462,75.27860431229901 -163.52773588010788,25.626326632523647 53.69594623209424,-57.869222154783714 138.21819808267077,-29.640116580261587" />
+    <g transform="matrix(-83.69934768106168 -49.65227767977535 217.96429586476552 -102.77640368203527 -79.8283881990462 75.27860431229901)" clip-path="url(#clip0)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469249904 218.04658628171705 -104.91872089256071 -79.8283881990462 75.27860431229901)" clip-path="url(#clip1)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.652277679775466 217.8820054478141 -100.63408647150993 -79.82838819904622 75.27860431229901)" clip-path="url(#clip2)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925013 217.96429586476552 -102.77640368203527 -79.82015915735107 75.06437259124648)" clip-path="url(#clip3)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.65227767977535 217.79971503086256 -98.49176926098465 -79.82838819904623 75.27860431229905)" clip-path="url(#clip4)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.509960469250075 217.8820054478141 -100.63408647150993 -79.81193011565593 74.85014087019394)" clip-path="url(#clip5)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.65227767977535 217.7174246139109 -96.34945205045915 -79.82838819904617 75.278604312299)" clip-path="url(#clip6)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925002 217.79971503086244 -98.49176926098448 -79.80370107396072 74.63590914914138)" clip-path="url(#clip7)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.652277679775295 217.6351341969596 -94.20713483993404 -79.82838819904634 75.27860431229902)" clip-path="url(#clip8)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801333 -47.50996046925013 217.71742461391125 -96.3494520504592 -79.79547203226548 74.4216774280889)" clip-path="url(#clip9)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.65227767977535 217.55284378000806 -92.06481762940871 -79.82838819904612 75.278604312299)" clip-path="url(#clip10)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925002 217.6351341969596 -94.20713483993404 -79.78724299057052 74.20744570703633)" clip-path="url(#clip11)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.65227767977541 217.47055336305652 -89.92250041888337 -79.82838819904623 75.27860431229902)" clip-path="url(#clip12)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469250075 217.55284378000806 -92.06481762940871 -79.77901394887533 73.99321398598386)" clip-path="url(#clip13)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106145 -49.65227767977524 217.38826294610476 -87.78018320835787 -79.82838819904646 75.27860431229894)" clip-path="url(#clip14)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801299 -47.50996046924996 217.4705533630563 -89.9225004188832 -79.77078490718031 73.77898226493122)" clip-path="url(#clip15)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106191 -49.65227767977541 217.30597252915368 -85.63786599783268 -79.82838819904578 75.27860431229902)" clip-path="url(#clip16)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469250075 217.388262946105 -87.78018320835804 -79.76255586548496 73.56475054387877)" clip-path="url(#clip17)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.69934768106168 -49.65227767977535 217.22368211220214 -83.4955487873074 -79.82838819904646 75.27860431229905)" clip-path="url(#clip18)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.5099604692501 217.30597252915368 -85.63786599783268 -79.75432682378982 73.35051882282629)" clip-path="url(#clip19)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469249904 217.9642958647654 -102.77640368203538 -79.82015915735106 75.06437259124648)" clip-path="url(#clip20)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.8639285149647 -45.3676432587248 218.04658628171688 -104.91872089256049 -79.8283881990462 75.278604312299)" clip-path="url(#clip21)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925013 217.88200544781398 -100.63408647150993 -79.81193011565591 74.85014087019395)" clip-path="url(#clip22)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496453 -45.367643258724684 217.9642958647654 -102.77640368203538 -79.81193011565591 74.85014087019395)" clip-path="url(#clip23)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.509960469250075 217.79971503086244 -98.49176926098465 -79.80370107396077 74.63590914914144)" clip-path="url(#clip24)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.3676432587248 217.8820054478141 -100.63408647150999 -79.7954720322656 74.4216774280889)" clip-path="url(#clip25)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925002 217.7174246139108 -96.34945205045932 -79.7954720322656 74.42167742808887)" clip-path="url(#clip26)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.36764325872474 217.79971503086222 -98.49176926098465 -79.7790139488753 73.99321398598381)" clip-path="url(#clip27)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801333 -47.50996046925013 217.6351341969597 -94.20713483993393 -79.78724299057043 74.20744570703641)" clip-path="url(#clip28)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496453 -45.367643258724684 217.7174246139109 -96.34945205045943 -79.76255586548504 73.56475054387874)" clip-path="url(#clip29)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.7816380980131 -47.50996046925002 217.5528437800083 -92.06481762940865 -79.77901394887546 73.99321398598383)" clip-path="url(#clip30)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.367643258724684 217.6351341969597 -94.20713483993393 -79.74609778209467 73.13628710177363)" clip-path="url(#clip31)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469250075 217.47055336305664 -89.92250041888332 -79.77078490718016 73.7789822649313)" clip-path="url(#clip32)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.36764325872477 217.5528437800083 -92.06481762940865 -79.72963969870449 72.70782365966863)" clip-path="url(#clip33)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801299 -47.50996046924996 217.38826294610476 -87.78018320835793 -79.76255586548524 73.56475054387869)" clip-path="url(#clip34)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496453 -45.367643258724684 217.4705533630563 -89.92250041888315 -79.71318161531428 72.27936021756352)" clip-path="url(#clip35)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.509960469250075 217.30597252915368 -85.63786599783273 -79.75432682378951 73.35051882282623)" clip-path="url(#clip36)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.36764325872474 217.38826294610521 -87.78018320835804 -79.69672353192368 71.85089677545852)" clip-path="url(#clip37)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.78163809801322 -47.5099604692501 217.22368211220214 -83.49554878730736 -79.74609778209495 73.13628710177379)" clip-path="url(#clip38)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.367643258724726 217.30597252915368 -85.63786599783273 -79.68026544853353 71.42243333335341)" clip-path="url(#clip39)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.8639285149647 -45.3676432587248 217.9642958647656 -102.77640368203532 -79.81193011565594 74.85014087019393)" clip-path="url(#clip40)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.9462189319162 -43.225326048199406 218.0465862817171 -104.91872089256066 -79.82838819904623 75.278604312299)" clip-path="url(#clip41)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496453 -45.367643258724684 217.88200544781415 -100.63408647151005 -79.79547203226565 74.42167742808887)" clip-path="url(#clip42)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191601 -43.225326048199406 217.9642958647656 -102.77640368203532 -79.8037010739608 74.63590914914138)" clip-path="url(#clip43)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.36764325872474 217.79971503086273 -98.49176926098471 -79.77901394887543 73.9932139859839)" clip-path="url(#clip44)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191623 -43.225326048199406 217.8820054478142 -100.63408647151005 -79.77901394887543 73.9932139859839)" clip-path="url(#clip45)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.36764325872474 217.7174246139113 -96.34945205045926 -79.76255586548497 73.56475054387867)" clip-path="url(#clip46)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191612 -43.22532604819935 217.79971503086267 -98.49176926098471 -79.75432682378982 73.35051882282615)" clip-path="url(#clip47)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496453 -45.36764325872463 217.6351341969596 -94.20713483993404 -79.74609778209492 73.1362871017737)" clip-path="url(#clip48)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191623 -43.225326048199406 217.7174246139113 -96.34945205045926 -79.72963969870456 72.70782365966866)" clip-path="url(#clip49)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.367643258724684 217.5528437800083 -92.06481762940871 -79.72963969870457 72.70782365966866)" clip-path="url(#clip50)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191595 -43.22532604819935 217.6351341969596 -94.20713483993404 -79.70495257361921 72.06512849651106)" clip-path="url(#clip51)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.36764325872474 217.47055336305675 -89.9225004188834 -79.71318161531437 72.27936021756364)" clip-path="url(#clip52)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191618 -43.225326048199435 217.5528437800083 -92.06481762940871 -79.68026544853365 71.4224333333535)" clip-path="url(#clip53)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496464 -45.36764325872474 217.38826294610521 -87.78018320835801 -79.6967235319234 71.85089677545844)" clip-path="url(#clip54)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191618 -43.22532604819936 217.47055336305664 -89.92250041888335 -79.65557832344757 70.77973817019576)" clip-path="url(#clip55)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.36764325872474 217.30597252915356 -85.6378659978327 -79.68026544853396 71.42243333335351)" clip-path="url(#clip56)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191629 -43.225326048199406 217.3882629461051 -87.78018320835804 -79.63089119836297 70.1370430070383)" clip-path="url(#clip57)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.86392851496475 -45.3676432587247 217.22368211220225 -83.49554878730738 -79.6638073651431 70.99396989124833)" clip-path="url(#clip58)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191606 -43.225326048199385 217.30597252915356 -85.6378659978327 -79.60620407327713 69.4943478438806)" clip-path="url(#clip59)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191618 -43.225326048199406 217.9642958647655 -102.77640368203527 -79.80370107396075 74.63590914914143)" clip-path="url(#clip60)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886756 -41.08300883767407 218.04658628171686 -104.9187208925606 -79.82838819904616 75.27860431229904)" clip-path="url(#clip61)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191606 -43.225326048199406 217.88200544781392 -100.63408647150993 -79.77901394887527 73.99321398598383)" clip-path="url(#clip62)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886763 -41.08300883767407 217.9642958647655 -102.77640368203527 -79.79547203226561 74.42167742808891)" clip-path="url(#clip63)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191623 -43.225326048199406 217.79971503086242 -98.4917692609846 -79.75432682378977 73.35051882282615)" clip-path="url(#clip64)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886766 -41.0830088376741 217.88200544781392 -100.63408647150993 -79.7625558654849 73.56475054387869)" clip-path="url(#clip65)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191606 -43.22532604819935 217.71742461391085 -96.34945205045932 -79.72963969870446 72.70782365966868)" clip-path="url(#clip66)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886771 -41.08300883767404 217.7997150308625 -98.49176926098463 -79.72963969870446 72.70782365966868)" clip-path="url(#clip67)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191623 -43.225326048199406 217.63513419695948 -94.20713483993396 -79.70495257361883 72.06512849651098)" clip-path="url(#clip68)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886754 -41.08300883767403 217.71742461391085 -96.34945205045929 -79.69672353192374 71.85089677545844)" clip-path="url(#clip69)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191595 -43.22532604819932 217.5528437800079 -92.06481762940864 -79.68026544853348 71.42243333335337)" clip-path="url(#clip70)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.0285093488676 -41.08300883767403 217.63513419695948 -94.20713483993396 -79.66380736514313 70.9939698912483)" clip-path="url(#clip71)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191618 -43.225326048199435 217.4705533630564 -89.92250041888335 -79.65557832344797 70.77973817019581)" clip-path="url(#clip72)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886766 -41.0830088376741 217.5528437800079 -92.06481762940864 -79.63089119836246 70.13704300703822)" clip-path="url(#clip73)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191629 -43.225326048199406 217.3882629461051 -87.78018320835804 -79.63089119836317 70.13704300703832)" clip-path="url(#clip74)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886749 -41.08300883767407 217.47055336305652 -89.92250041888337 -79.59797503158262 69.28011612282818)" clip-path="url(#clip75)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191618 -43.22532604819936 217.30597252915334 -85.63786599783265 -79.60620407327661 69.4943478438806)" clip-path="url(#clip76)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886783 -41.08300883767407 217.388262946105 -87.78018320835794 -79.56505886480085 68.42318923861795)" clip-path="url(#clip77)"><use href="#tex0"/></g>
+    <g transform="matrix(-83.94621893191606 -43.225326048199406 217.22368211220214 -83.49554878730743 -79.58151694819188 68.85165268072305)" clip-path="url(#clip78)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886771 -41.08300883767406 217.30597252915368 -85.63786599783276 -79.53214269802095 67.56626235440784)" clip-path="url(#clip79)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886757 -41.08300883767407 217.96429586476546 -102.77640368203527 -79.79547203226562 74.42167742808887)" clip-path="url(#clip80)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581914 -38.94069162714874 218.04658628171694 -104.9187208925606 -79.82838819904623 75.27860431229898)" clip-path="url(#clip81)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886764 -41.0830088376741 217.882005447814 -100.63408647150993 -79.76255586548503 73.56475054387872)" clip-path="url(#clip82)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581908 -38.940691627148766 217.96429586476546 -102.77640368203527 -79.78724299057046 74.20744570703633)" clip-path="url(#clip83)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886767 -41.0830088376741 217.7997150308625 -98.49176926098458 -79.7296396987044 72.70782365966863)" clip-path="url(#clip84)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.1107997658192 -38.94069162714875 217.88200544781404 -100.63408647150993 -79.7460977820947 73.1362871017737)" clip-path="url(#clip85)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886769 -41.08300883767404 217.71742461391108 -96.34945205045925 -79.69672353192384 71.85089677545844)" clip-path="url(#clip86)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581907 -38.94069162714874 217.79971503086247 -98.49176926098457 -79.70495257361898 72.06512849651097)" clip-path="url(#clip87)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886754 -41.08300883767403 217.63513419695954 -94.20713483993399 -79.6638073651433 70.99396989124835)" clip-path="url(#clip88)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581914 -38.94069162714876 217.71742461391113 -96.34945205045926 -79.6638073651433 70.99396989124835)" clip-path="url(#clip89)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.0285093488676 -41.08300883767404 217.5528437800081 -92.06481762940868 -79.63089119836269 70.13704300703823)" clip-path="url(#clip90)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581905 -38.94069162714872 217.63513419695954 -94.20713483993399 -79.62266215666753 69.9228112859857)" clip-path="url(#clip91)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886771 -41.08300883767411 217.4705533630567 -89.92250041888332 -79.59797503158202 69.28011612282813)" clip-path="url(#clip92)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581911 -38.94069162714876 217.5528437800081 -92.06481762940868 -79.58151694819176 68.85165268072306)" clip-path="url(#clip93)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886749 -41.08300883767405 217.3882629461051 -87.78018320835798 -79.56505886480136 68.42318923861798)" clip-path="url(#clip94)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581897 -38.940691627148745 217.47055336305658 -89.92250041888329 -79.54037173971588 67.7804940754604)" clip-path="url(#clip95)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.02850934886783 -41.08300883767411 217.30597252915373 -85.63786599783268 -79.5321426980208 67.56626235440784)" clip-path="url(#clip96)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581925 -38.940691627148766 217.38826294610516 -87.78018320835801 -79.49922653124025 66.7093354701977)" clip-path="url(#clip97)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.0285093488676 -41.083008837674036 217.22368211220225 -83.4955487873074 -79.49922653124042 66.70933547019766)" clip-path="url(#clip98)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581908 -38.940691627148766 217.30597252915373 -85.63786599783268 -79.45808132276468 65.63817686493503)" clip-path="url(#clip99)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581914 -38.94069162714874 217.96429586476552 -102.77640368203527 -79.78724299057049 74.20744570703633)" clip-path="url(#clip100)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277056 -36.79837441662343 218.046586281717 -104.91872089256056 -79.8283881990462 75.278604312299)" clip-path="url(#clip101)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581908 -38.940691627148766 217.882005447814 -100.63408647150993 -79.74609778209472 73.13628710177368)" clip-path="url(#clip102)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277062 -36.79837441662343 217.96429586476552 -102.77640368203527 -79.77901394887536 73.99321398598381)" clip-path="url(#clip103)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.1107997658192 -38.94069162714875 217.7997150308625 -98.49176926098465 -79.70495257361894 72.06512849651105)" clip-path="url(#clip104)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277073 -36.79837441662344 217.88200544781404 -100.63408647150996 -79.7296396987044 72.70782365966866)" clip-path="url(#clip105)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581907 -38.94069162714874 217.71742461391105 -96.34945205045929 -79.66380736514326 70.99396989124833)" clip-path="url(#clip106)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277053 -36.79837441662338 217.79971503086247 -98.49176926098464 -79.68026544853355 71.42243333335341)" clip-path="url(#clip107)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581914 -38.94069162714876 217.63513419695963 -94.20713483993399 -79.62266215666753 69.92281128598572)" clip-path="url(#clip108)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277059 -36.798374416623446 217.71742461391108 -96.3494520504593 -79.63089119836269 70.13704300703824)" clip-path="url(#clip109)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581905 -38.94069162714872 217.55284378000812 -92.06481762940867 -79.58151694819182 68.85165268072303)" clip-path="url(#clip110)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277058 -36.7983744166234 217.63513419695963 -94.20713483993399 -79.58151694819182 68.85165268072303)" clip-path="url(#clip111)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581911 -38.94069162714876 217.47055336305658 -89.92250041888332 -79.540371739716 67.78049407546038)" clip-path="url(#clip112)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277065 -36.7983744166234 217.55284378000812 -92.06481762940867 -79.53214269802085 67.56626235440785)" clip-path="url(#clip113)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581897 -38.940691627148745 217.38826294610502 -87.78018320835798 -79.49922653124015 66.70933547019773)" clip-path="url(#clip114)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277046 -36.79837441662343 217.47055336305647 -89.9225004188833 -79.48276844784984 66.28087202809269)" clip-path="url(#clip115)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581925 -38.940691627148766 217.30597252915365 -85.6378659978327 -79.45808132276467 65.63817686493502)" clip-path="url(#clip116)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277073 -36.79837441662346 217.38826294610513 -87.78018320835801 -79.43339419767929 64.99548170177741)" clip-path="url(#clip117)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.11079976581908 -38.940691627148766 217.22368211220214 -83.49554878730734 -79.41693611428855 64.56701825967247)" clip-path="url(#clip118)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277059 -36.7983744166234 217.30597252915365 -85.6378659978327 -79.38401994750804 63.710091375462284)" clip-path="url(#clip119)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277056 -36.79837441662343 217.96429586476546 -102.7764036820353 -79.77901394887527 73.99321398598383)" clip-path="url(#clip120)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972198 -34.656057206098154 218.04658628171688 -104.91872089256059 -79.82838819904617 75.278604312299)" clip-path="url(#clip121)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277062 -36.79837441662343 217.8820054478141 -100.63408647150995 -79.72963969870449 72.7078236596686)" clip-path="url(#clip122)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972198 -34.65605720609808 217.96429586476546 -102.7764036820353 -79.77078490718014 73.77898226493129)" clip-path="url(#clip123)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277073 -36.79837441662344 217.7997150308625 -98.49176926098461 -79.68026544853348 71.42243333335344)" clip-path="url(#clip124)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972238 -34.65605720609809 217.88200544781415 -100.63408647150996 -79.71318161531408 72.27936021756358)" clip-path="url(#clip125)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277053 -36.79837441662338 217.71742461391094 -96.34945205045929 -79.63089119836266 70.13704300703819)" clip-path="url(#clip126)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972204 -34.65605720609807 217.7997150308625 -98.4917692609846 -79.6555783234481 70.77973817019578)" clip-path="url(#clip127)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277059 -36.798374416623446 217.63513419695963 -94.20713483993399 -79.58151694819182 68.85165268072305)" clip-path="url(#clip128)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972193 -34.656057206098126 217.71742461391096 -96.3494520504593 -79.5979750315821 69.28011612282812)" clip-path="url(#clip129)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277058 -36.7983744166234 217.5528437800081 -92.06481762940865 -79.53214269802092 67.56626235440784)" clip-path="url(#clip130)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.2753805997221 -34.65605720609807 217.63513419695963 -94.20713483993399 -79.54037173971605 67.78049407546038)" clip-path="url(#clip131)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277065 -36.7983744166234 217.47055336305664 -89.92250041888335 -79.48276844784999 66.28087202809272)" clip-path="url(#clip132)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.2753805997221 -34.6560572060981 217.5528437800081 -92.06481762940865 -79.48276844784999 66.28087202809272)" clip-path="url(#clip133)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277046 -36.79837441662343 217.388262946105 -87.78018320835801 -79.43339419767901 64.99548170177741)" clip-path="url(#clip134)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972206 -34.656057206098126 217.47055336305658 -89.92250041888329 -79.42516515598385 64.78124998072491)" clip-path="url(#clip135)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277073 -36.79837441662346 217.30597252915362 -85.63786599783268 -79.38401994750828 63.7100913754623)" clip-path="url(#clip136)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972217 -34.65605720609807 217.38826294610504 -87.78018320835807 -79.36756186411796 63.281627933357235)" clip-path="url(#clip137)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.19309018277059 -36.7983744166234 217.22368211220208 -83.49554878730734 -79.33464569733727 62.42470104914696)" clip-path="url(#clip138)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.2753805997221 -34.65605720609807 217.30597252915362 -85.63786599783268 -79.30995857225177 61.78200588598938)" clip-path="url(#clip139)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972198 -34.656057206098154 217.96429586476563 -102.77640368203527 -79.77078490718009 73.77898226493126)" clip-path="url(#clip140)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667341 -32.51373999557278 218.04658628171705 -104.91872089256064 -79.82838819904612 75.27860431229902)" clip-path="url(#clip141)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972198 -34.65605720609808 217.88200544781398 -100.63408647150996 -79.713181615314 72.27936021756352)" clip-path="url(#clip142)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667363 -32.51373999557278 217.96429586476563 -102.77640368203527 -79.76255586548501 73.56475054387873)" clip-path="url(#clip143)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972233 -34.65605720609808 217.79971503086233 -98.49176926098463 -79.65557832344825 70.77973817019588)" clip-path="url(#clip144)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667386 -32.51373999557276 217.88200544781387 -100.63408647150992 -79.69672353192396 71.85089677545852)" clip-path="url(#clip145)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972204 -34.65605720609808 217.7174246139112 -96.34945205045932 -79.59797503158171 69.28011612282802)" clip-path="url(#clip146)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.3576710166733 -32.513739995572735 217.79971503086244 -98.49176926098467 -79.63089119836226 70.13704300703813)" clip-path="url(#clip147)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972193 -34.65605720609811 217.63513419695937 -94.20713483993399 -79.54037173971614 67.7804940754605)" clip-path="url(#clip148)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667375 -32.51373999557282 217.71742461391102 -96.34945205045926 -79.56505886480161 68.42318923861806)" clip-path="url(#clip149)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972207 -34.65605720609807 217.55284378000792 -92.06481762940865 -79.48276844785008 66.28087202809272)" clip-path="url(#clip150)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667341 -32.513739995572706 217.63513419695937 -94.20713483993399 -79.49922653124034 66.70933547019777)" clip-path="url(#clip151)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972207 -34.65605720609807 217.4705533630565 -89.92250041888337 -79.42516515598385 64.78124998072488)" clip-path="url(#clip152)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667352 -32.51373999557285 217.55284378000792 -92.06481762940865 -79.43339419767898 64.99548170177744)" clip-path="url(#clip153)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972214 -34.65605720609818 217.38826294610533 -87.7801832083581 -79.36756186411773 63.2816279333569)" clip-path="url(#clip154)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667352 -32.51373999557279 217.4705533630567 -89.92250041888349 -79.36756186411773 63.2816279333569)" clip-path="url(#clip155)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972214 -34.65605720609807 217.30597252915356 -85.6378659978327 -79.3099585722519 61.78200588598986)" clip-path="url(#clip156)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667363 -32.51373999557279 217.3882629461051 -87.78018320835798 -79.30172953055674 61.56777416493732)" clip-path="url(#clip157)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.27538059972207 -34.65605720609807 217.2236821122021 -83.49554878730731 -79.25235528038576 60.28238383862171)" clip-path="url(#clip158)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667354 -32.51373999557268 217.30597252915356 -85.6378659978327 -79.23589719699547 59.85392039651653)" clip-path="url(#clip159)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667341 -32.51373999557278 217.9642958647653 -102.7764036820353 -79.76255586548496 73.56475054387879)" clip-path="url(#clip160)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.371422785047486 218.04658628171705 -104.91872089256056 -79.82838819904646 75.278604312299)" clip-path="url(#clip161)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667363 -32.51373999557278 217.88200544781398 -100.63408647150993 -79.69672353192391 71.8508967754585)" clip-path="url(#clip162)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.37142278504743 217.9642958647653 -102.7764036820353 -79.75432682378982 73.35051882282625)" clip-path="url(#clip163)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667375 -32.51373999557279 217.79971503086267 -98.49176926098457 -79.63089119836229 70.1370430070381)" clip-path="url(#clip164)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.37142278504743 217.88200544781398 -100.63408647150993 -79.68026544853308 71.42243333335333)" clip-path="url(#clip165)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.3576710166733 -32.513739995572735 217.71742461391102 -96.34945205045926 -79.56505886480181 68.42318923861805)" clip-path="url(#clip166)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362494 -30.3714227850474 217.79971503086256 -98.49176926098454 -79.60620407327764 69.49434784388072)" clip-path="url(#clip167)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667375 -32.51373999557282 217.63513419695983 -94.20713483993399 -79.4992265312402 66.70933547019769)" clip-path="url(#clip168)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362494 -30.371422785047514 217.71742461391102 -96.34945205045929 -79.53214269802078 67.56626235440778)" clip-path="url(#clip169)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667346 -32.513739995572735 217.55284378000823 -92.06481762940865 -79.43339419767881 64.99548170177721)" clip-path="url(#clip170)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.3714227850474 217.63513419695983 -94.20713483993399 -79.45808132276431 65.63817686493483)" clip-path="url(#clip171)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667358 -32.51373999557285 217.47055336305664 -89.92250041888326 -79.36756186411776 63.28162793335713)" clip-path="url(#clip172)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362517 -30.371422785047457 217.55284378000823 -92.06481762940865 -79.38401994750811 63.71009137546223)" clip-path="url(#clip173)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667346 -32.513739995572735 217.388262946105 -87.78018320835798 -79.30172953055722 61.56777416493736)" clip-path="url(#clip174)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.439961433625 -30.371422785047514 217.47055336305664 -89.92250041888326 -79.3099585722524 61.7820058859899)" clip-path="url(#clip175)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667369 -32.51373999557285 217.30597252915362 -85.63786599783259 -79.2358971969953 59.853920396516514)" clip-path="url(#clip176)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362511 -30.3714227850474 217.38826294610504 -87.78018320835804 -79.2358971969953 59.853920396516514)" clip-path="url(#clip177)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.35767101667355 -32.51373999557268 217.2236821122021 -83.49554878730737 -79.17006486343425 58.140066628096235)" clip-path="url(#clip178)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.371422785047457 217.30597252915362 -85.63786599783259 -79.16183582173912 57.92583490704373)" clip-path="url(#clip179)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.371422785047486 217.96429586476552 -102.77640368203524 -79.75432682379005 73.35051882282622)" clip-path="url(#clip180)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 218.04658628171705 -104.91872089256063 -79.82838819904623 75.27860431229905)" clip-path="url(#clip181)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.37142278504743 217.88200544781398 -100.63408647150993 -79.68026544853353 71.42243333335338)" clip-path="url(#clip182)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 217.96429586476552 -102.77640368203524 -79.74609778209492 73.13628710177369)" clip-path="url(#clip183)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.37142278504743 217.79971503086256 -98.49176926098465 -79.60620407327758 69.49434784388075)" clip-path="url(#clip184)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 217.8820054478141 -100.63408647150996 -79.6638073651435 70.99396989124841)" clip-path="url(#clip185)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362494 -30.3714227850474 217.7174246139109 -96.34945205045932 -79.53214269802095 67.56626235440785)" clip-path="url(#clip186)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.52225185057637 -28.229105574522123 217.79971503086256 -98.49176926098465 -79.58151694819173 68.85165268072302)" clip-path="url(#clip187)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362494 -30.371422785047514 217.63513419695937 -94.20713483993399 -79.45808132276431 65.63817686493508)" clip-path="url(#clip188)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.22910557452218 217.71742461391102 -96.34945205045932 -79.49922653124008 66.70933547019769)" clip-path="url(#clip189)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.3714227850474 217.55284378000806 -92.06481762940871 -79.38401994750859 63.71009137546241)" clip-path="url(#clip190)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.52225185057637 -28.229105574522123 217.63513419695937 -94.20713483993399 -79.41693611428911 64.56701825967261)" clip-path="url(#clip191)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362517 -30.371422785047457 217.47055336305664 -89.92250041888337 -79.30995857225162 61.782005885989406)" clip-path="url(#clip192)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 217.55284378000806 -92.06481762940871 -79.33464569733712 62.424701049147046)" clip-path="url(#clip193)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.439961433625 -30.371422785047514 217.3882629461051 -87.78018320835793 -79.23589719699555 59.85392039651663)" clip-path="url(#clip194)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.52225185057648 -28.22910557452218 217.4705533630564 -89.92250041888332 -79.25235528038576 60.28238383862178)" clip-path="url(#clip195)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362511 -30.3714227850474 217.30597252915368 -85.6378659978327 -79.16183582173898 57.92583490704385)" clip-path="url(#clip196)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 217.38826294610516 -87.78018320835798 -79.17006486343419 58.140066628096285)" clip-path="url(#clip197)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.43996143362506 -30.371422785047457 217.22368211220214 -83.49554878730737 -79.0877744464828 55.99774941757107)" clip-path="url(#clip198)"><use href="#tex0"/></g>
+    <g transform="matrix(-84.5222518505766 -28.229105574522123 217.30597252915368 -85.6378659978327 -79.0877744464828 55.99774941757107)" clip-path="url(#clip199)"><use href="#tex0"/></g>
+    <polygon fill="rgba(128,128,128,0.5)" points="89.50356937934527,-35.118417992393304 70.4493670863404,-41.72272910555685 71.03571221398369,-47.58735945485311 90.26562616418431,-41.061636599075136" />
+    <polygon fill="rgba(128,128,128,0.5)" points="83.74825243391825,-32.59531977452356 64.6647963203528,-39.31129694096561 70.4493670863404,-41.72272910555685 89.50356937934527,-35.118417992393304" />
+    <polygon fill="rgba(128,128,128,0.5)" points="64.6647963203528,-39.31129694096561 65.20751387234904,-45.20490923054475 71.03571221398369,-47.58735945485311 70.4493670863404,-41.72272910555685" />
+    <polygon fill="rgba(128,128,128,0.5)" points="83.74825243391825,-32.59531977452356 64.6647963203528,-39.31129694096561 65.20751387234904,-45.20490923054475 84.46743021351394,-38.56790824285256" />
+    <polygon fill="rgba(128,128,128,0.5)" points="84.46743021351394,-38.56790824285256 65.20751387234904,-45.20490923054475 71.03571221398369,-47.58735945485311 90.26562616418431,-41.061636599075136" />
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" transform="matrix(-0.9426828488981993 -0.32485016489118457 0.9148208966340584 -0.3934525204408713 77.74407061600775 -43.10545338183139)"><text x="0" y="0" fill="white">LED</text></g>
+  <g stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <polygon fill="rgba(128,128,128,0.5)" points="83.74825243391825,-32.59531977452356 84.46743021351394,-38.56790824285256 90.26562616418431,-41.061636599075136 89.50356937934527,-35.118417992393304" />
+    <polygon fill="rgba(0,140,0,0.8)" points="-78.55404676827465,84.65930675551596 -79.8283881990462,75.27860431229901 138.21819808267077,-29.640116580261587 136.5741413510162,-21.402446117052463" />
+    <polygon fill="rgba(128,128,128,0.5)" points="59.71238492626468,-22.058132153309963 40.530461467166745,-29.25034104806062 40.88244115858807,-35.2613089022547 60.243397686836175,-28.14946820947447" />
+    <polygon fill="rgba(128,128,128,0.5)" points="53.43623410640272,-19.306703326917063 34.23488975068759,-26.625886313947454 40.530461467166745,-29.25034104806062 59.71238492626468,-22.058132153309963" />
+    <polygon fill="rgba(128,128,128,0.5)" points="34.23488975068759,-26.625886313947454 34.5348011808294,-32.66652138776555 40.88244115858807,-35.2613089022547 40.530461467166745,-29.25034104806062" />
+    <polygon fill="rgba(128,128,128,0.5)" points="53.915697848945584,-25.42800714647117 34.5348011808294,-32.66652138776555 40.88244115858807,-35.2613089022547 60.243397686836175,-28.14946820947447" />
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" transform="matrix(-0.9341463241345804 -0.3488915702143415 0.9154301474569969 -0.39371455126324245 47.39408446879981 -30.37632641149147)"><text x="0" y="0" fill="white">R1</text></g>
+  <g stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <polygon fill="rgba(128,128,128,0.5)" points="53.43623410640272,-19.306703326917063 34.23488975068759,-26.625886313947454 34.5348011808294,-32.66652138776555 53.915697848945584,-25.42800714647117" />
+    <polygon fill="rgba(128,128,128,0.5)" points="54.00642314701683,-1.2472547684911708 -6.667813244929991,-25.6961470803167 -6.786037032852313,-37.90553752906542 55.042020886449606,-13.982822350376338" />
+    <polygon fill="rgba(128,128,128,0.5)" points="7.669969183897253,20.258852794619884 -53.00907658872408,-7.345286062906381 -6.667813244929991,-25.6961470803167 54.00642314701683,-1.2472547684911708" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-53.00907658872408,-7.345286062906381 -54.006425179242854,-19.955971030657675 -6.786037032852313,-37.90553752906542 -6.667813244929991,-25.6961470803167" />
+    <polygon fill="rgba(128,128,128,0.5)" points="53.43623410640272,-19.306703326917063 53.915697848945584,-25.42800714647117 60.243397686836175,-28.14946820947447 59.71238492626468,-22.058132153309963" />
+    <polygon fill="rgba(128,128,128,0.5)" points="7.82681904172051,7.116668306426222 -54.006425179242854,-19.955971030657675 -6.786037032852313,-37.90553752906542 55.042020886449606,-13.982822350376338" />
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" transform="matrix(-0.9136339037146637 -0.4000191397528739 0.9105904118680831 -0.40692389604873563 0.5190944290187378 -16.181915650918302)"><text x="0" y="0" fill="white">SW1</text></g>
+  <g stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <polygon fill="rgba(128,128,128,0.5)" points="7.669969183897253,20.258852794619884 -53.00907658872408,-7.345286062906381 -54.006425179242854,-19.955971030657675 7.82681904172051,7.116668306426222" />
+    <polygon fill="rgba(128,128,128,0.5)" points="7.669969183897253,20.258852794619884 7.82681904172051,7.116668306426222 55.042020886449606,-13.982822350376338 54.00642314701683,-1.2472547684911708" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-15.841065219165351,36.19595525346433 -85.94810121611192,1.812059236486236 -87.61175995406342,-10.984566727229582 -16.180005875698654,22.786519045275675" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-75.50143409446,64.26978582095373 -144.46367267612996,24.716776351429502 -85.94810121611192,1.812059236486236 -15.841065219165351,36.19595525346433" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-144.46367267612996,24.716776351429502 -147.4561560973226,11.49691001135611 -87.61175995406342,-10.984566727229582 -85.94810121611192,1.812059236486236" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-77.2430888437844,50.4603909956559 -147.4561560973226,11.49691001135611 -87.61175995406342,-10.984566727229582 -16.180005875698654,22.786519045275675" />
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" transform="matrix(-0.8722039431828011 -0.48401391769310337 0.9092815720660548 -0.4120876406674045 -82.12275269271727 18.439813331264524)"><text x="0" y="0" fill="white">USBC</text></g>
+  <g stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <polygon fill="rgba(0,140,0,0.8)" points="-78.55404676827465,84.65930675551596 -161.23145874638521,34.57518112622289 -163.52773588010788,25.626326632523647 -79.8283881990462,75.27860431229901" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-75.50143409446,64.26978582095373 -144.46367267612996,24.716776351429502 -147.4561560973226,11.49691001135611 -77.2430888437844,50.4603909956559" />
+    <polygon fill="rgba(128,128,128,0.5)" points="-75.50143409446,64.26978582095373 -77.2430888437844,50.4603909956559 -16.180005875698654,22.786519045275675 -15.841065219165351,36.19595525346433" />
+  </g>
+</svg>
