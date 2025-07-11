@@ -45,9 +45,6 @@ export async function convertCircuitJsonToSimple3dSvg(
       pcbBoard,
       opts.anglePreset ?? "angle1",
       opts.zoom,
-      opts.width && opts.height
-        ? { width: opts.width, height: opts.height }
-        : undefined,
     )
   if (!camera.focalLength) {
     camera.focalLength = 1

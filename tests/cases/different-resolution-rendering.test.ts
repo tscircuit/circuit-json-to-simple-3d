@@ -17,7 +17,7 @@ test("different resolution rendering", async () => {
     {
       width: 1920,
       height: 1080,
-      zoom: { defaultZoomMultiplier: 1.8 },
+      zoom: { fitToView: true  },
     },
   )
 

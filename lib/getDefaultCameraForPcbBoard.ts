@@ -14,7 +14,6 @@ export function getDefaultCameraForPcbBoard(
   pcbBoard: PcbBoard,
   anglePreset: AnglePreset = "angle1",
   zoomOptions?: ZoomOptions,
-  viewportDimensions?: { width: number; height: number },
 ): Camera {
   const w = pcbBoard.width
   const h = pcbBoard.height
@@ -57,21 +56,7 @@ export function getDefaultCameraForPcbBoard(
     throw new Error(`Unknown angle preset: ${anglePreset}`)
   }
 
-  let focalLength = effectiveZoomLevel ? Math.max(1, 2 * effectiveZoomLevel) : 2
-
-  if (viewportDimensions) {
-    const { width: vw, height: vh } = viewportDimensions
-    const viewportAspectRatio = vw / vh
-    const boardAspectRatio = w / h
-
-    const aspectRatioDifference = Math.abs(
-      viewportAspectRatio - boardAspectRatio,
-    )
-    if (aspectRatioDifference > 0.5) {
-      const scaleFactor = Math.min(vw / (boardSize * 2), vh / (boardSize * 2))
-      focalLength = Math.max(1, focalLength * scaleFactor)
-    }
-  }
+  const focalLength = effectiveZoomLevel ? Math.max(1, 2 * effectiveZoomLevel) : 2
 
   return {
     position,

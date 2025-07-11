@@ -19,6 +19,6 @@ test("edge cases and error handling", async () => {
 
   expect([invalidZoomLevel, invalidHexColor]).toMatchMultipleSvgSnapshots(
     import.meta.path,
-    ["invalid-zoom", "extreme-zoom", "invalid-color"],
+    ["invalid-zoom", "invalid-color"],
   )
 })
