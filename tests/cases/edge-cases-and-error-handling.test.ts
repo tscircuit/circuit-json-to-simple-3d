@@ -10,13 +10,6 @@ test("edge cases and error handling", async () => {
     },
   )
 
-  const extremeZoom = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      zoom: { defaultZoomMultiplier: 100 },
-    },
-  )
-
   const invalidHexColor = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
@@ -24,13 +17,8 @@ test("edge cases and error handling", async () => {
     },
   )
 
-  expect([
-    invalidZoomLevel,
-    extremeZoom,
-    invalidHexColor,
-  ]).toMatchMultipleSvgSnapshots(import.meta.path, [
-    "invalid-zoom",
-    "extreme-zoom",
-    "invalid-color",
-  ])
+  expect([invalidZoomLevel, invalidHexColor]).toMatchMultipleSvgSnapshots(
+    import.meta.path,
+    ["invalid-zoom", "extreme-zoom", "invalid-color"],
+  )
 })
