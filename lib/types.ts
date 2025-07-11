@@ -1,3 +1,5 @@
+import type { AnglePreset } from "./getDefaultCameraForPcbBoard"
+
 export interface ZoomOptions {
   defaultZoomMultiplier?: number
   fitToView?: boolean
@@ -14,12 +16,11 @@ export interface Simple3dSvgOptions {
     lookAt: { x: number; y: number; z: number }
     focalLength?: number
   }
-  anglePreset?: import("./getDefaultCameraForPcbBoard").AnglePreset
+  anglePreset?: AnglePreset
   zoom?: ZoomOptions
   background?: BackgroundOptions
   width?: number
   height?: number
-  scalable?: boolean
 }
 
 export interface RenderSceneOptions {
@@ -27,5 +28,4 @@ export interface RenderSceneOptions {
   width?: number
   height?: number
   viewBox?: string
-  scalable?: boolean
 }

@@ -14,6 +14,7 @@ export function getDefaultCameraForPcbBoard(
   pcbBoard: PcbBoard,
   anglePreset: AnglePreset = "angle1",
   zoomOptions?: ZoomOptions,
+  viewportDimensions?: { width: number; height: number },
 ): Camera {
   const w = pcbBoard.width
   const h = pcbBoard.height
@@ -21,25 +22,20 @@ export function getDefaultCameraForPcbBoard(
   const cx = pcbBoard.center?.x || 0
   const cz = pcbBoard.center?.y || 0
 
-  let baseDist = Math.max(w, h) * 1.5
+  const boardSize = Math.max(w, h)
+  let baseDist = boardSize * 1.5
   let effectiveZoomLevel: number | undefined
 
-  // Validate and apply zoom level
   if (zoomOptions?.defaultZoomMultiplier !== undefined) {
-    // Only use valid positive zoom levels
     if (zoomOptions.defaultZoomMultiplier > 0) {
       effectiveZoomLevel = zoomOptions.defaultZoomMultiplier
       baseDist = baseDist / effectiveZoomLevel
     }
-    // If zoom level is invalid (negative or zero), ignore it and use default
   }
 
-  // Handle fitToView option (overrides zoom level but uses better calculation)
   if (zoomOptions?.fitToView) {
-    // Better fit calculation that considers board dimensions
-    const boardSize = Math.max(w, h)
-    baseDist = boardSize * 1.2 // Closer than 1.5 but not too close like 0.8
-    effectiveZoomLevel = 1.25 // Set a reasonable zoom level for fit to view
+    baseDist = boardSize * 1.2
+    effectiveZoomLevel = 1.25
   }
 
   const dist = baseDist
@@ -61,10 +57,21 @@ export function getDefaultCameraForPcbBoard(
     throw new Error(`Unknown angle preset: ${anglePreset}`)
   }
 
-  // Use effective zoom level for focal length calculation
-  const focalLength = effectiveZoomLevel
-    ? Math.max(1, 2 * effectiveZoomLevel)
-    : 2
+  let focalLength = effectiveZoomLevel ? Math.max(1, 2 * effectiveZoomLevel) : 2
+
+  if (viewportDimensions) {
+    const { width: vw, height: vh } = viewportDimensions
+    const viewportAspectRatio = vw / vh
+    const boardAspectRatio = w / h
+
+    const aspectRatioDifference = Math.abs(
+      viewportAspectRatio - boardAspectRatio,
+    )
+    if (aspectRatioDifference > 0.5) {
+      const scaleFactor = Math.min(vw / (boardSize * 2), vh / (boardSize * 2))
+      focalLength = Math.max(1, focalLength * scaleFactor)
+    }
+  }
 
   return {
     position,

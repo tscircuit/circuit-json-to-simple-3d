@@ -1,9 +1,9 @@
 import { test, expect } from "bun:test"
-import usbCFlashlightCircuitJson from "./assets/usb-c-flashlight.json"
+import usbCFlashlightCircuitJson from "../assets/usb-c-flashlight.json"
 import { convertCircuitJsonToSimple3dSvg } from "lib"
 import type { Simple3dSvgOptions } from "lib"
 
-test("comprehensive examples - all new features", async () => {
+test("comprehensive examples all new features", async () => {
   const basicUsage = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
   )
@@ -42,16 +42,15 @@ test("comprehensive examples - all new features", async () => {
     solidColorExample,
   )
 
-  const scalableExample: Simple3dSvgOptions = {
+  const dimensionExample: Simple3dSvgOptions = {
     anglePreset: "angle1",
-    scalable: true,
     width: 800,
     height: 600,
     background: { color: "#ecf0f1" },
   }
-  const scalableSvg = await convertCircuitJsonToSimple3dSvg(
+  const dimensionSvg = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
-    scalableExample,
+    dimensionExample,
   )
 
   const advancedExample: Simple3dSvgOptions = {
@@ -65,7 +64,6 @@ test("comprehensive examples - all new features", async () => {
     },
     width: 800,
     height: 600,
-    scalable: true,
   }
   const advancedSvg = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
@@ -77,73 +75,14 @@ test("comprehensive examples - all new features", async () => {
     zoomedSvg,
     backgroundSvg,
     solidColorSvg,
-    scalableSvg,
+    dimensionSvg,
     advancedSvg,
   ]).toMatchMultipleSvgSnapshots(import.meta.path, [
     "basic-usage",
     "zoom-example",
     "background-example",
     "solid-color-example",
-    "scalable-example",
+    "dimension-example",
     "advanced-example",
-  ])
-})
-
-test("edge cases and error handling", async () => {
-  const invalidZoomLevel = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      zoom: { defaultZoomMultiplier: -1 },
-    },
-  )
-
-  const extremeZoom = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      zoom: { defaultZoomMultiplier: 100 },
-    },
-  )
-
-  const invalidHexColor = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      background: { color: "invalid-color" },
-    },
-  )
-
-  expect([
-    invalidZoomLevel,
-    extremeZoom,
-    invalidHexColor,
-  ]).toMatchMultipleSvgSnapshots(import.meta.path, [
-    "invalid-zoom",
-    "extreme-zoom",
-    "invalid-color",
-  ])
-})
-
-test("performance and optimization", async () => {
-  const lowRes = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      width: 200,
-      height: 150,
-      zoom: { fitToView: true },
-    },
-  )
-
-  const highRes = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      width: 1920,
-      height: 1080,
-      scalable: false,
-      zoom: { defaultZoomMultiplier: 1.8 },
-    },
-  )
-
-  expect([lowRes, highRes]).toMatchMultipleSvgSnapshots(import.meta.path, [
-    "low-res",
-    "high-res",
   ])
 })

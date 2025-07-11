@@ -27,6 +27,5 @@ convertCircuitJsonToSimple3dSvg(circuitJson, {
   },
   width: 800, // SVG width
   height: 600, // SVG height
-  scalable: true // Make SVG scalable
 })
 ```
