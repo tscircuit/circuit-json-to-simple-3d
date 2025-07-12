@@ -32,10 +32,7 @@ export function getDefaultCameraForPcbBoard(
     }
   }
 
-  if (zoomOptions?.fitToView) {
-    baseDist = boardSize * 1.2
-    effectiveZoomLevel = 1.25
-  }
+
 
   const dist = baseDist
 

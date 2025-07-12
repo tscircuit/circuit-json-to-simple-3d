@@ -2,7 +2,6 @@ import type { AnglePreset } from "./getDefaultCameraForPcbBoard"
 
 export interface ZoomOptions {
   defaultZoomMultiplier?: number
-  fitToView?: boolean
 }
 
 export interface BackgroundOptions {

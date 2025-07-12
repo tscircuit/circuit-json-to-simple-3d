@@ -12,19 +12,8 @@ test("combined options zoom with background", async () => {
     },
   )
 
-  const fitToViewWithSolidBg = await convertCircuitJsonToSimple3dSvg(
-    usbCFlashlightCircuitJson as any,
-    {
-      anglePreset: "left-raised",
-      zoom: { fitToView: true },
-      background: { color: "#87CEEB", opacity: 0.8 },
-      width: 600,
-      height: 400,
-    },
-  )
-
-  expect([zoomWithRedBg, fitToViewWithSolidBg]).toMatchMultipleSvgSnapshots(
+  expect([zoomWithRedBg]).toMatchMultipleSvgSnapshots(
     import.meta.path,
-    ["zoom-with-red-bg", "fit-to-view-with-solid-bg"],
+    ["zoom-with-red-bg"],
   )
 })

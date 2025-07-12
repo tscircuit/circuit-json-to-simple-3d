@@ -19,7 +19,6 @@ convertCircuitJsonToSimple3dSvg(circuitJson, {
   anglePreset: "angle1", // "angle1" | "angle2" | "left" | "right" | "left-raised" | "right-raised"
   zoom: {
     defaultZoomMultiplier: 1.5, // Zoom level multiplier
-    fitToView: true, // Auto-fit to viewport
   },
   background: {
     color: "#ffffff", // CSS color value
