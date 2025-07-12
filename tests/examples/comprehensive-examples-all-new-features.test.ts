@@ -10,9 +10,7 @@ test("comprehensive examples all new features", async () => {
 
   const zoomExample: Simple3dSvgOptions = {
     anglePreset: "angle1",
-    zoom: {
-      defaultZoomMultiplier: 1.5,
-    },
+    defaultZoomMultiplier: 1.5,
   }
   const zoomedSvg = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
@@ -55,9 +53,7 @@ test("comprehensive examples all new features", async () => {
 
   const advancedExample: Simple3dSvgOptions = {
     anglePreset: "angle1",
-    zoom: {
-      defaultZoomMultiplier: 2.2,
-    },
+    defaultZoomMultiplier: 2.2,
     background: {
       color: "#6c757d",
       opacity: 0.8,

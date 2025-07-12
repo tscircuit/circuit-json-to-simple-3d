@@ -6,7 +6,7 @@ test("edge cases and error handling", async () => {
   const invalidZoomLevel = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
-      zoom: { defaultZoomMultiplier: -1 },
+      defaultZoomMultiplier: -1,
     },
   )
 

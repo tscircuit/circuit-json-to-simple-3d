@@ -9,7 +9,6 @@ import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 import type {
   Simple3dSvgOptions,
   BackgroundOptions,
-  ZoomOptions,
   RenderSceneOptions,
 } from "./types"
 import { getColorFromBackgroundOptions } from "./utils/get-background-color-from-options"
@@ -44,7 +43,7 @@ export async function convertCircuitJsonToSimple3dSvg(
     getDefaultCameraForPcbBoard(
       pcbBoard,
       opts.anglePreset ?? "angle1",
-      opts.zoom,
+      opts.defaultZoomMultiplier,
     )
   if (!camera.focalLength) {
     camera.focalLength = 1
@@ -105,4 +104,4 @@ export async function convertCircuitJsonToSimple3dSvg(
   return await renderScene({ boxes, camera }, renderOptions)
 }
 
-export type { Simple3dSvgOptions, BackgroundOptions, ZoomOptions, AnglePreset }
+export type { Simple3dSvgOptions, BackgroundOptions, AnglePreset }

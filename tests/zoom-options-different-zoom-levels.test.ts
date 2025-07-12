@@ -7,7 +7,7 @@ test("zoom options different zoom levels", async () => {
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle1",
-      zoom: { defaultZoomMultiplier: 1 },
+      defaultZoomMultiplier: 1,
     },
   )
 
@@ -15,7 +15,7 @@ test("zoom options different zoom levels", async () => {
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle1",
-      zoom: { defaultZoomMultiplier: 2 },
+      defaultZoomMultiplier: 2,
     },
   )
 
@@ -23,17 +23,12 @@ test("zoom options different zoom levels", async () => {
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle1",
-      zoom: { defaultZoomMultiplier: 0.5 },
+      defaultZoomMultiplier: 0.5,
     },
   )
 
-  expect([
-    zoomLevel1,
-    zoomLevel2,
-    zoomLevel05,
-  ]).toMatchMultipleSvgSnapshots(import.meta.path, [
-    "zoom-1x",
-    "zoom-2x",
-    "zoom-0.5x",
-  ])
+  expect([zoomLevel1, zoomLevel2, zoomLevel05]).toMatchMultipleSvgSnapshots(
+    import.meta.path,
+    ["zoom-1x", "zoom-2x", "zoom-0.5x"],
+  )
 })

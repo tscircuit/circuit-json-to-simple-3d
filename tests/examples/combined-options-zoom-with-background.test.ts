@@ -7,13 +7,12 @@ test("combined options zoom with background", async () => {
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle2",
-      zoom: { defaultZoomMultiplier: 1.5 },
+      defaultZoomMultiplier: 1.5,
       background: { color: "#ff4444" },
     },
   )
 
-  expect([zoomWithRedBg]).toMatchMultipleSvgSnapshots(
-    import.meta.path,
-    ["zoom-with-red-bg"],
-  )
+  expect([zoomWithRedBg]).toMatchMultipleSvgSnapshots(import.meta.path, [
+    "zoom-with-red-bg",
+  ])
 })

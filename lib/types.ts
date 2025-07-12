@@ -1,9 +1,5 @@
 import type { AnglePreset } from "./getDefaultCameraForPcbBoard"
 
-export interface ZoomOptions {
-  defaultZoomMultiplier?: number
-}
-
 export interface BackgroundOptions {
   color?: string
   opacity?: number
@@ -16,7 +12,7 @@ export interface Simple3dSvgOptions {
     focalLength?: number
   }
   anglePreset?: AnglePreset
-  zoom?: ZoomOptions
+  defaultZoomMultiplier?: number
   background?: BackgroundOptions
   width?: number
   height?: number

@@ -1,6 +1,5 @@
 import type { PcbBoard, Point3 } from "circuit-json"
 import type { Camera } from "@tscircuit/simple-3d-svg"
-import type { ZoomOptions } from "./types"
 
 export type AnglePreset =
   | "angle1"
@@ -13,7 +12,7 @@ export type AnglePreset =
 export function getDefaultCameraForPcbBoard(
   pcbBoard: PcbBoard,
   anglePreset: AnglePreset = "angle1",
-  zoomOptions?: ZoomOptions,
+  defaultZoomMultiplier?: number,
 ): Camera {
   const w = pcbBoard.width
   const h = pcbBoard.height
@@ -25,14 +24,12 @@ export function getDefaultCameraForPcbBoard(
   let baseDist = boardSize * 1.5
   let effectiveZoomLevel: number | undefined
 
-  if (zoomOptions?.defaultZoomMultiplier !== undefined) {
-    if (zoomOptions.defaultZoomMultiplier > 0) {
-      effectiveZoomLevel = zoomOptions.defaultZoomMultiplier
+  if (defaultZoomMultiplier !== undefined) {
+    if (defaultZoomMultiplier > 0) {
+      effectiveZoomLevel = defaultZoomMultiplier
       baseDist = baseDist / effectiveZoomLevel
     }
   }
-
-
 
   const dist = baseDist
 
