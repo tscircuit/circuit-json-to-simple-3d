@@ -8,7 +8,3 @@ export const isValidColor = (color: string): boolean => {
     return false
   }
 }
-
-if (import.meta.main) {
-  console.log(Color("color"))
-}
