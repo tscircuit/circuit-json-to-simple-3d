@@ -12,7 +12,7 @@ import type {
   ZoomOptions,
   RenderSceneOptions,
 } from "./types"
-import { getColorFromBackgroundOptions } from "./utils/get-background-color"
+import { getColorFromBackgroundOptions } from "./utils/get-background-color-from-options"
 
 export async function convertCircuitJsonToSimple3dSvg(
   circuitJson: CircuitJson,

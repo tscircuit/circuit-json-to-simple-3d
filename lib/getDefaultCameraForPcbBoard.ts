@@ -56,7 +56,9 @@ export function getDefaultCameraForPcbBoard(
     throw new Error(`Unknown angle preset: ${anglePreset}`)
   }
 
-  const focalLength = effectiveZoomLevel ? Math.max(1, 2 * effectiveZoomLevel) : 2
+  const focalLength = effectiveZoomLevel
+    ? Math.max(1, 2 * effectiveZoomLevel)
+    : 2
 
   return {
     position,
