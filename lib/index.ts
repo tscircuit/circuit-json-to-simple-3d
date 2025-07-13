@@ -6,17 +6,16 @@ import {
   type AnglePreset,
 } from "./getDefaultCameraForPcbBoard"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
+import type {
+  Simple3dSvgOptions,
+  BackgroundOptions,
+  RenderSceneOptions,
+} from "./types"
+import { getColorFromBackgroundOptions } from "./utils/get-background-color-from-options"
 
 export async function convertCircuitJsonToSimple3dSvg(
   circuitJson: CircuitJson,
-  opts: {
-    camera?: {
-      position: { x: number; y: number; z: number }
-      lookAt: { x: number; y: number; z: number }
-      focalLength?: number
-    }
-    anglePreset?: AnglePreset
-  } = {},
+  opts: Simple3dSvgOptions = {},
 ): Promise<string> {
   const db = cju(circuitJson)
   const boxes: Box[] = []
@@ -28,27 +27,28 @@ export async function convertCircuitJsonToSimple3dSvg(
     drawPaddingOutsideBoard: false,
     colorOverrides: {
       copper: {
-        top: "#ffe066", // sort of a yellow
+        top: "#ffe066",
         bottom: "#ffe066",
       },
       drill: "rgba(0,0,0,0.5)",
     },
   }).replace("<svg", "<svg transform='scale(1, -1)'")
-  // console.log(pcbTopSvg)
 
   const pcbBoard = db.pcb_board.list()[0]
 
   if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
 
-  // TODO if camera not
   const camera =
     opts.camera ??
-    getDefaultCameraForPcbBoard(pcbBoard, opts.anglePreset ?? "angle1")
+    getDefaultCameraForPcbBoard(
+      pcbBoard,
+      opts.anglePreset ?? "angle1",
+      opts.defaultZoomMultiplier,
+    )
   if (!camera.focalLength) {
     camera.focalLength = 1
   }
 
-  // pcb board as a thin green box lying in the X-Z plane
   boxes.push({
     center: {
       x: pcbBoard.center.x,
@@ -67,7 +67,7 @@ export async function convertCircuitJsonToSimple3dSvg(
     color: "rgba(0,140,0,0.8)",
   })
 
-  const DEFAULT_COMP_HEIGHT = 2 // mm – arbitrary extrusion for components
+  const DEFAULT_COMP_HEIGHT = 2
 
   for (const comp of db.pcb_component.list()) {
     const sourceComponent = db.source_component.get(comp.source_component_id)
@@ -92,10 +92,16 @@ export async function convertCircuitJsonToSimple3dSvg(
     })
   }
 
-  return await renderScene(
-    { boxes, camera },
-    {
-      backgroundColor: "lightgray",
-    },
-  )
+  const backgroundColor = getColorFromBackgroundOptions(opts.background)
+
+  const renderOptions: RenderSceneOptions = {
+    backgroundColor,
+  }
+
+  if (opts.width) renderOptions.width = opts.width
+  if (opts.height) renderOptions.height = opts.height
+
+  return await renderScene({ boxes, camera }, renderOptions)
 }
+
+export type { Simple3dSvgOptions, BackgroundOptions, AnglePreset }

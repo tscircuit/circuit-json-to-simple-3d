@@ -12,14 +12,26 @@ export type AnglePreset =
 export function getDefaultCameraForPcbBoard(
   pcbBoard: PcbBoard,
   anglePreset: AnglePreset = "angle1",
+  defaultZoomMultiplier?: number,
 ): Camera {
   const w = pcbBoard.width
   const h = pcbBoard.height
 
-  const cx = pcbBoard.center?.x
-  const cz = pcbBoard.center?.y // pcb y → renderer z
+  const cx = pcbBoard.center?.x || 0
+  const cz = pcbBoard.center?.y || 0
 
-  const dist = Math.max(w, h) * 1.5 // * 10
+  const boardSize = Math.max(w, h)
+  let baseDist = boardSize * 1.5
+  let effectiveZoomLevel: number | undefined
+
+  if (defaultZoomMultiplier !== undefined) {
+    if (defaultZoomMultiplier > 0) {
+      effectiveZoomLevel = defaultZoomMultiplier
+      baseDist = baseDist / effectiveZoomLevel
+    }
+  }
+
+  const dist = baseDist
 
   let position: Point3
   if (anglePreset === "angle1") {
@@ -27,20 +39,24 @@ export function getDefaultCameraForPcbBoard(
   } else if (anglePreset === "angle2") {
     position = { x: cx + dist, y: dist, z: cz - dist }
   } else if (anglePreset === "left") {
-    position = { x: cx - dist, y: 0, z: 0 }
+    position = { x: cx - dist, y: 0, z: cz }
   } else if (anglePreset === "right") {
-    position = { x: cx + dist, y: 0, z: 0 }
+    position = { x: cx + dist, y: 0, z: cz }
   } else if (anglePreset === "left-raised") {
-    position = { x: cx - dist, y: dist, z: 0 }
+    position = { x: cx - dist, y: dist, z: cz }
   } else if (anglePreset === "right-raised") {
-    position = { x: cx + dist, y: dist, z: 0 }
+    position = { x: cx + dist, y: dist, z: cz }
   } else {
     throw new Error(`Unknown angle preset: ${anglePreset}`)
   }
 
+  const focalLength = effectiveZoomLevel
+    ? Math.max(1, 2 * effectiveZoomLevel)
+    : 2
+
   return {
     position,
     lookAt: { x: cx, y: 0, z: cz },
-    focalLength: 2,
+    focalLength,
   }
 }
