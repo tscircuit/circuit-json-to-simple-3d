@@ -83,10 +83,20 @@ export async function convertCircuitJsonToSimple3dSvg(
         : undefined, // used only when model fails to load
       // STL / OBJ support
       ...(model_stl_url
-        ? { stlUrl: model_stl_url, scaleStlToBox: false, centerModel: true }
+        ? {
+            stlUrl: model_stl_url,
+            scaleStlToBox: false,
+            centerModel: true,
+            drawBoundingBox: true,
+          }
         : {}),
       ...(model_obj_url
-        ? { objUrl: model_obj_url, scaleObjToBox: false, centerModel: true }
+        ? {
+            objUrl: model_obj_url,
+            scaleObjToBox: false,
+            centerModel: true,
+            drawBoundingBox: true,
+          }
         : {}),
       // Forward any explicit rotation/position overrides from the CAD record
       ...(cad.rotation
