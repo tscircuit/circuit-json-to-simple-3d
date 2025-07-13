@@ -1,4 +1,5 @@
 import type { CircuitJson } from "circuit-json"
+import type { CadComponent } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
 import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
 import {
@@ -20,6 +21,83 @@ export async function convertCircuitJsonToSimple3dSvg(
   const db = cju(circuitJson)
   const boxes: Box[] = []
 
+  // ---------------------------------------------------------------------------
+  // Essential board-level constants – needed before we create any Box objects
+  // ---------------------------------------------------------------------------
+  const pcbBoard = db.pcb_board.list()[0]
+  if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
+
+  // Default extrusion (height) for generic PCB components / fallback cubes
+  const DEFAULT_COMP_HEIGHT = 2
+
+  // ---------------------------------------------------------------------------
+  // Add 3-D CAD models (STL / OBJ) that are described by cad_component records
+  // ---------------------------------------------------------------------------
+  const cadComponents: CadComponent[] = (db.cad_component?.list?.() ??
+    []) as any
+  const pcbComponentIdsWith3d = new Set<string>()
+
+  for (const cad of cadComponents) {
+    const { model_stl_url, model_obj_url } = cad
+    if (!model_stl_url && !model_obj_url) continue // nothing we can render
+
+    // Remember which pcb_component already has a 3-D model so we can skip the
+    // generic “gray cube” later
+    pcbComponentIdsWith3d.add(cad.pcb_component_id)
+
+    // Size – prefer the one given on the cad_component, otherwise fall back to
+    // the pcb_component footprint, finally to a small default cube
+    const pcbComp = db.pcb_component.get(cad.pcb_component_id)
+    const DEFAULT_SIZE = 2
+    const size =
+      cad.size ??
+      (pcbComp
+        ? { x: pcbComp.width, y: DEFAULT_COMP_HEIGHT, z: pcbComp.height }
+        : { x: DEFAULT_SIZE, y: DEFAULT_SIZE, z: DEFAULT_SIZE })
+
+    // Position – use the explicit 3-D position when provided, otherwise put the
+    // model on top of the PCB at the pcb_component centre
+    const center = cad.position
+      ? { x: cad.position.x, y: cad.position.z, z: cad.position.y }
+      : {
+          x: pcbComp?.center.x ?? 0,
+          y: pcbBoard.thickness / 2 + size.y / 2,
+          z: pcbComp?.center.y ?? 0,
+        }
+
+    const convertRotation = (rot: { x: number; y: number; z: number }) => {
+      return {
+        x: (rot.x * Math.PI) / 180 - Math.PI / 4,
+        y: (rot.y * Math.PI) / 180, // + Math.PI,
+        z: (rot.z * Math.PI) / 180 + Math.PI,
+        // x: (rot.x * Math.PI) / 180,
+        // y: (rot.y * Math.PI) / 180,
+        // z: (rot.y * Math.PI) / 180 + Math.PI / 2,
+      }
+    }
+    boxes.push({
+      center,
+      size,
+      color: !(model_obj_url || model_stl_url)
+        ? "rgba(128,128,128,0.5)"
+        : undefined, // used only when model fails to load
+      // STL / OBJ support
+      ...(model_stl_url
+        ? { stlUrl: model_stl_url, scaleStlToBox: false, centerModel: true }
+        : {}),
+      ...(model_obj_url
+        ? { objUrl: model_obj_url, scaleObjToBox: false, centerModel: true }
+        : {}),
+      // Forward any explicit rotation/position overrides from the CAD record
+      ...(cad.rotation
+        ? {
+            stlRotation: convertRotation(cad.rotation),
+            objRotation: convertRotation(cad.rotation),
+          }
+        : {}),
+    } satisfies Box)
+  }
+
   const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson, {
     layer: "top",
     matchBoardAspectRatio: true,
@@ -33,10 +111,6 @@ export async function convertCircuitJsonToSimple3dSvg(
       drill: "rgba(0,0,0,0.5)",
     },
   }).replace("<svg", "<svg transform='scale(1, -1)'")
-
-  const pcbBoard = db.pcb_board.list()[0]
-
-  if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
 
   const camera =
     opts.camera ??
@@ -67,9 +141,8 @@ export async function convertCircuitJsonToSimple3dSvg(
     color: "rgba(0,140,0,0.8)",
   })
 
-  const DEFAULT_COMP_HEIGHT = 2
-
   for (const comp of db.pcb_component.list()) {
+    if (pcbComponentIdsWith3d.has(comp.pcb_component_id)) continue
     const sourceComponent = db.source_component.get(comp.source_component_id)
     const compHeight = Math.min(
       Math.min(comp.width, comp.height),
