@@ -16,6 +16,10 @@ export interface Simple3dSvgOptions {
   background?: BackgroundOptions
   width?: number
   height?: number
+  showAxes?: boolean
+  showOrigin?: boolean
+  showGrid?: boolean
+  showBoundingBoxes?: boolean
 }
 
 export interface RenderSceneOptions {
@@ -23,4 +27,7 @@ export interface RenderSceneOptions {
   width?: number
   height?: number
   viewBox?: string
+  showAxes?: boolean
+  showOrigin?: boolean
+  showGrid?: boolean
 }
