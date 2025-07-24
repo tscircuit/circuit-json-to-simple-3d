@@ -5,7 +5,7 @@ import { isValidColor } from "./is-valid-color"
 export function getColorFromBackgroundOptions(
   background?: BackgroundOptions,
 ): string {
-  if (!background) return "lightgray"
+  if (!background) return "white"
 
   if (background.color) {
     if (background.opacity !== undefined) {
@@ -14,7 +14,7 @@ export function getColorFromBackgroundOptions(
         const opacity = Math.max(0, Math.min(1, background.opacity))
         return color.alpha(opacity).string()
       } catch {
-        return "lightgray"
+        return "white"
       }
     }
 
@@ -22,8 +22,8 @@ export function getColorFromBackgroundOptions(
       return background.color
     }
 
-    return "lightgray"
+    return "white"
   }
 
-  return "lightgray"
+  return "white"
 }

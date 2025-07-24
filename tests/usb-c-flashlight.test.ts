@@ -1,39 +1,57 @@
 import { test, expect } from "bun:test"
 import usbCFlashlightCircuitJson from "./assets/usb-c-flashlight.json"
-import { convertCircuitJsonToSimple3dSvg } from "lib"
+import {
+  convertCircuitJsonToSimple3dScene,
+  convertCircuitJsonToSimple3dSvg,
+} from "lib"
 
 test("usb-c-flashlight", async () => {
-  const svg1 = await convertCircuitJsonToSimple3dSvg(
+  const angle1 = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle1",
+      showAxes: true,
+      showOrigin: true,
+      showGrid: true,
     },
   )
-  const svg2 = await convertCircuitJsonToSimple3dSvg(
+  const angle2 = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "angle2",
+      showAxes: true,
+      showOrigin: true,
+      showGrid: true,
     },
   )
-  const svg3 = await convertCircuitJsonToSimple3dSvg(
+  const left = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "left",
+      showAxes: true,
+      showOrigin: true,
+      showGrid: true,
     },
   )
-  const svg4 = await convertCircuitJsonToSimple3dSvg(
+  const right = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "right",
+      showAxes: true,
+      showOrigin: true,
+      showGrid: true,
     },
   )
-  const svg5 = await convertCircuitJsonToSimple3dSvg(
+  const leftRaised = await convertCircuitJsonToSimple3dSvg(
     usbCFlashlightCircuitJson as any,
     {
       anglePreset: "left-raised",
+      showAxes: true,
+      showOrigin: true,
+      showGrid: true,
     },
   )
-  expect([svg1, svg2, svg3, svg4, svg5]).toMatchMultipleSvgSnapshots(
+  expect([angle1, angle2, left, right, leftRaised]).toMatchMultipleSvgSnapshots(
     import.meta.path,
     ["angle1", "angle2", "left", "right", "left-raised"],
   )
