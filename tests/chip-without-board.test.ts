@@ -15,6 +15,6 @@ test("chip-without-board", async () => {
       showGrid: true,
     },
   )
-  
+
   expect(angle1).toMatchSvgSnapshot(import.meta.path)
 })

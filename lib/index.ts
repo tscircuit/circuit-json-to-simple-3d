@@ -1,7 +1,7 @@
 import type { CircuitJson } from "circuit-json"
 import type { CadComponent } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
-import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
+import { renderScene, type Box, type Camera } from "@tscircuit/simple-3d-svg"
 import {
   getDefaultCameraForPcbBoard,
   type AnglePreset,
@@ -37,12 +37,12 @@ export async function convertCircuitJsonToSimple3dScene(
   // Essential board-level constants – needed before we create any Box objects
   // ---------------------------------------------------------------------------
   const pcbBoard = db.pcb_board.list()[0]
-  
+
   // Default extrusion (height) for generic PCB components / fallback cubes
   const DEFAULT_COMP_HEIGHT = 2
-  
+
   // Default board thickness for when there's no PCB board
-  const DEFAULT_BOARD_THICKNESS = 1.6
+  const DEFAULT_BOARD_THICKNESS = 1.4
 
   // ---------------------------------------------------------------------------
   // Add 3-D CAD models (STL / OBJ) that are described by cad_component records
@@ -113,8 +113,26 @@ export async function convertCircuitJsonToSimple3dScene(
     } satisfies Box)
   }
 
-  // Only render PCB board if it exists
-  let camera: any
+  let camera: Camera | undefined = opts.camera
+
+  if (!camera) {
+    camera = pcbBoard
+      ? getDefaultCameraForPcbBoard(
+          pcbBoard,
+          opts.anglePreset ?? "angle1",
+          opts.defaultZoomMultiplier,
+        )
+      : {
+          position: { x: 10, y: 10, z: 10 },
+          lookAt: { x: 0, y: 0, z: 0 },
+          focalLength: 2,
+        }
+  }
+
+  if (!camera.focalLength) {
+    camera.focalLength = 1
+  }
+
   if (pcbBoard) {
     const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson, {
       layer: "top",
@@ -129,14 +147,6 @@ export async function convertCircuitJsonToSimple3dScene(
         drill: "rgba(0,0,0,0.5)",
       },
     }).replace("<svg", "<svg transform='scale(1, -1)'")
-
-    camera =
-      opts.camera ??
-      getDefaultCameraForPcbBoard(
-        pcbBoard,
-        opts.anglePreset ?? "angle1",
-        opts.defaultZoomMultiplier,
-      )
 
     boxes.push({
       center: {
@@ -155,17 +165,6 @@ export async function convertCircuitJsonToSimple3dScene(
       projectionSubdivision: 10,
       color: "rgba(0,140,0,0.8)",
     })
-  } else {
-    // Default camera for standalone components
-    camera = opts.camera ?? {
-      position: { x: 10, y: 10, z: 10 },
-      lookAt: { x: 0, y: 0, z: 0 },
-      focalLength: 2,
-    }
-  }
-  
-  if (!camera.focalLength) {
-    camera.focalLength = 1
   }
 
   for (const comp of db.pcb_component.list()) {

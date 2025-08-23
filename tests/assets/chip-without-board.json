@@ -15,11 +15,7 @@
     "source_port_id": "source_port_0",
     "name": "GND",
     "pin_number": 1,
-    "port_hints": [
-      "GND",
-      "pin1",
-      "1"
-    ],
+    "port_hints": ["GND", "pin1", "1"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -28,11 +24,7 @@
     "source_port_id": "source_port_1",
     "name": "TRIG",
     "pin_number": 2,
-    "port_hints": [
-      "TRIG",
-      "pin2",
-      "2"
-    ],
+    "port_hints": ["TRIG", "pin2", "2"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -41,11 +33,7 @@
     "source_port_id": "source_port_2",
     "name": "OUT",
     "pin_number": 3,
-    "port_hints": [
-      "OUT",
-      "pin3",
-      "3"
-    ],
+    "port_hints": ["OUT", "pin3", "3"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -54,11 +42,7 @@
     "source_port_id": "source_port_3",
     "name": "RESET",
     "pin_number": 4,
-    "port_hints": [
-      "RESET",
-      "pin4",
-      "4"
-    ],
+    "port_hints": ["RESET", "pin4", "4"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -67,11 +51,7 @@
     "source_port_id": "source_port_4",
     "name": "VCC",
     "pin_number": 8,
-    "port_hints": [
-      "VCC",
-      "pin8",
-      "8"
-    ],
+    "port_hints": ["VCC", "pin8", "8"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -80,11 +60,7 @@
     "source_port_id": "source_port_5",
     "name": "DISCH",
     "pin_number": 7,
-    "port_hints": [
-      "DISCH",
-      "pin7",
-      "7"
-    ],
+    "port_hints": ["DISCH", "pin7", "7"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -93,11 +69,7 @@
     "source_port_id": "source_port_6",
     "name": "THRES",
     "pin_number": 6,
-    "port_hints": [
-      "THRES",
-      "pin6",
-      "6"
-    ],
+    "port_hints": ["THRES", "pin6", "6"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -106,11 +78,7 @@
     "source_port_id": "source_port_7",
     "name": "CONT",
     "pin_number": 5,
-    "port_hints": [
-      "CONT",
-      "pin5",
-      "5"
-    ],
+    "port_hints": ["CONT", "pin5", "5"],
     "source_component_id": "source_component_0",
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -120,9 +88,7 @@
     "ftype": "simple_chip",
     "name": "UNNAMED_subcircuit_source_group_0",
     "supplier_part_numbers": {
-      "lcsc": [
-        "C46749"
-      ]
+      "lcsc": ["C46749"]
     },
     "source_group_id": "source_group_0"
   },
@@ -369,16 +335,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin1"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin1"],
     "x": -3.810000000000059,
     "y": -3.8099999999999454,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -412,16 +372,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin2"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin2"],
     "x": -1.2699999999999818,
     "y": -3.8099999999999454,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -455,16 +409,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin3"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin3"],
     "x": 1.2699999999999818,
     "y": -3.8099999999999454,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -498,16 +446,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin4"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin4"],
     "x": 3.8099999999999454,
     "y": -3.8099999999999454,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -541,16 +483,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin8"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin8"],
     "x": -3.810000000000059,
     "y": 3.810000000000059,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -584,16 +520,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin7"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin7"],
     "x": -1.2699999999999818,
     "y": 3.810000000000059,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -627,16 +557,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin6"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin6"],
     "x": 1.2699999999999818,
     "y": 3.810000000000059,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -670,16 +594,10 @@
     "outer_diameter": 1.499997,
     "hole_diameter": 0.9000235999999999,
     "shape": "circle",
-    "port_hints": [
-      "UNNAMED_subcircuit_source_group_0",
-      "pin5"
-    ],
+    "port_hints": ["UNNAMED_subcircuit_source_group_0", "pin5"],
     "x": 3.8099999999999454,
     "y": 3.810000000000059,
-    "layers": [
-      "top",
-      "bottom"
-    ],
+    "layers": ["top", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0"
   },
@@ -877,12 +795,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_0",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": -3.810000000000059,
@@ -893,12 +806,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_1",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": -1.2699999999999818,
@@ -909,12 +817,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_2",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": 1.2699999999999818,
@@ -925,12 +828,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_3",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": 3.8099999999999454,
@@ -941,12 +839,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_4",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": -3.810000000000059,
@@ -957,12 +850,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_5",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": -1.2699999999999818,
@@ -973,12 +861,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_6",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": 1.2699999999999818,
@@ -989,12 +872,7 @@
     "type": "pcb_port",
     "pcb_port_id": "pcb_port_7",
     "pcb_component_id": "pcb_component_0",
-    "layers": [
-      "top",
-      "inner1",
-      "inner2",
-      "bottom"
-    ],
+    "layers": ["top", "inner1", "inner2", "bottom"],
     "subcircuit_id": "subcircuit_source_group_0",
     "pcb_group_id": "pcb_group_0",
     "x": 3.8099999999999454,
