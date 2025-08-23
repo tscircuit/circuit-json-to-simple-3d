@@ -6,6 +6,7 @@ import {
   getDefaultCameraForPcbBoard,
   type AnglePreset,
 } from "./getDefaultCameraForPcbBoard"
+import { getDefaultCameraForComponents } from "./getDefaultCameraForComponents"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 import type {
   Simple3dSvgOptions,
@@ -116,17 +117,21 @@ export async function convertCircuitJsonToSimple3dScene(
   let camera: Camera | undefined = opts.camera
 
   if (!camera) {
-    camera = pcbBoard
-      ? getDefaultCameraForPcbBoard(
-          pcbBoard,
-          opts.anglePreset ?? "angle1",
-          opts.defaultZoomMultiplier,
-        )
-      : {
-          position: { x: 10, y: 10, z: 10 },
-          lookAt: { x: 0, y: 0, z: 0 },
-          focalLength: 2,
-        }
+    if (pcbBoard) {
+      camera = getDefaultCameraForPcbBoard(
+        pcbBoard,
+        opts.anglePreset ?? "angle1",
+        opts.defaultZoomMultiplier,
+      )
+    } else {
+      // Use component-based camera for standalone components
+      const pcbComponents = db.pcb_component.list()
+      camera = getDefaultCameraForComponents(
+        pcbComponents,
+        opts.anglePreset ?? "angle1",
+        opts.defaultZoomMultiplier,
+      )
+    }
   }
 
   if (!camera.focalLength) {
