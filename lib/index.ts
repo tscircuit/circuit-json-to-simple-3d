@@ -1,11 +1,12 @@
 import type { CircuitJson } from "circuit-json"
 import type { CadComponent } from "circuit-json"
 import { cju } from "@tscircuit/circuit-json-util"
-import { renderScene, type Box } from "@tscircuit/simple-3d-svg"
+import { renderScene, type Box, type Camera } from "@tscircuit/simple-3d-svg"
 import {
   getDefaultCameraForPcbBoard,
   type AnglePreset,
 } from "./getDefaultCameraForPcbBoard"
+import { getDefaultCameraForComponents } from "./getDefaultCameraForComponents"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 import type {
   Simple3dSvgOptions,
@@ -37,10 +38,12 @@ export async function convertCircuitJsonToSimple3dScene(
   // Essential board-level constants – needed before we create any Box objects
   // ---------------------------------------------------------------------------
   const pcbBoard = db.pcb_board.list()[0]
-  if (!pcbBoard) throw new Error("No pcb_board, can't render to 3d")
 
   // Default extrusion (height) for generic PCB components / fallback cubes
   const DEFAULT_COMP_HEIGHT = 2
+
+  // Default board thickness for when there's no PCB board
+  const DEFAULT_BOARD_THICKNESS = 1.4
 
   // ---------------------------------------------------------------------------
   // Add 3-D CAD models (STL / OBJ) that are described by cad_component records
@@ -69,11 +72,12 @@ export async function convertCircuitJsonToSimple3dScene(
 
     // Position – use the explicit 3-D position when provided, otherwise put the
     // model on top of the PCB at the pcb_component centre
+    const boardThickness = pcbBoard?.thickness ?? DEFAULT_BOARD_THICKNESS
     const center = cad.position
       ? { x: cad.position.x, y: cad.position.z, z: cad.position.y }
       : {
           x: pcbComp?.center.x ?? 0,
-          y: pcbBoard.thickness / 2 + size.y / 2,
+          y: boardThickness / 2 + size.y / 2,
           z: pcbComp?.center.y ?? 0,
         }
 
@@ -110,48 +114,63 @@ export async function convertCircuitJsonToSimple3dScene(
     } satisfies Box)
   }
 
-  const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson, {
-    layer: "top",
-    matchBoardAspectRatio: true,
-    backgroundColor: "transparent",
-    drawPaddingOutsideBoard: false,
-    colorOverrides: {
-      copper: {
-        top: "#ffe066",
-        bottom: "#ffe066",
-      },
-      drill: "rgba(0,0,0,0.5)",
-    },
-  }).replace("<svg", "<svg transform='scale(1, -1)'")
+  let camera: Camera | undefined = opts.camera
 
-  const camera =
-    opts.camera ??
-    getDefaultCameraForPcbBoard(
-      pcbBoard,
-      opts.anglePreset ?? "angle1",
-      opts.defaultZoomMultiplier,
-    )
+  if (!camera) {
+    if (pcbBoard) {
+      camera = getDefaultCameraForPcbBoard(
+        pcbBoard,
+        opts.anglePreset ?? "angle1",
+        opts.defaultZoomMultiplier,
+      )
+    } else {
+      // Use component-based camera for standalone components
+      const pcbComponents = db.pcb_component.list()
+      camera = getDefaultCameraForComponents(
+        pcbComponents,
+        opts.anglePreset ?? "angle1",
+        opts.defaultZoomMultiplier,
+      )
+    }
+  }
+
   if (!camera.focalLength) {
     camera.focalLength = 1
   }
 
-  boxes.push({
-    center: {
-      x: pcbBoard.center.x,
-      y: 0,
-      z: pcbBoard.center.y,
-    },
-    size: {
-      x: pcbBoard.width,
-      y: pcbBoard.thickness,
-      z: pcbBoard.height,
-    },
-    faceImages: {
-      top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
-    },
-    projectionSubdivision: 10,
-    color: "rgba(0,140,0,0.8)",
-  })
+  if (pcbBoard) {
+    const pcbTopSvg = convertCircuitJsonToPcbSvg(circuitJson, {
+      layer: "top",
+      matchBoardAspectRatio: true,
+      backgroundColor: "transparent",
+      drawPaddingOutsideBoard: false,
+      colorOverrides: {
+        copper: {
+          top: "#ffe066",
+          bottom: "#ffe066",
+        },
+        drill: "rgba(0,0,0,0.5)",
+      },
+    }).replace("<svg", "<svg transform='scale(1, -1)'")
+
+    boxes.push({
+      center: {
+        x: pcbBoard.center.x,
+        y: 0,
+        z: pcbBoard.center.y,
+      },
+      size: {
+        x: pcbBoard.width,
+        y: pcbBoard.thickness,
+        z: pcbBoard.height,
+      },
+      faceImages: {
+        top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
+      },
+      projectionSubdivision: 10,
+      color: "rgba(0,140,0,0.8)",
+    })
+  }
 
   for (const comp of db.pcb_component.list()) {
     if (pcbComponentIdsWith3d.has(comp.pcb_component_id)) continue
@@ -160,10 +179,11 @@ export async function convertCircuitJsonToSimple3dScene(
       Math.min(comp.width, comp.height),
       DEFAULT_COMP_HEIGHT,
     )
+    const boardThickness = pcbBoard?.thickness ?? DEFAULT_BOARD_THICKNESS
     boxes.push({
       center: {
         x: comp.center.x,
-        y: pcbBoard.thickness / 2 + compHeight / 2,
+        y: boardThickness / 2 + compHeight / 2,
         z: comp.center.y,
       },
       size: {
