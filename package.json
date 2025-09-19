@@ -3,6 +3,7 @@
   "main": "dist/index.js",
   "version": "0.0.8",
   "type": "module",
+  "files": ["dist"],
   "scripts": {
     "build": "tsup-node --dts --sourcemap inline --format esm ./lib/index.ts",
     "format": "biome format --write .",
