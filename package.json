@@ -1,7 +1,7 @@
 {
   "name": "circuit-json-to-simple-3d",
   "main": "dist/index.js",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "repository": {
     "type": "git",
     "url": "https://github.com/tscircuit/circuit-json-to-simple-3d.git"
