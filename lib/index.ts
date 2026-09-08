@@ -1,17 +1,17 @@
+import { cju } from "@tscircuit/circuit-json-util"
+import { type Box, type Camera, renderScene } from "@tscircuit/simple-3d-svg"
 import type { CircuitJson } from "circuit-json"
 import type { CadComponent } from "circuit-json"
-import { cju } from "@tscircuit/circuit-json-util"
-import { renderScene, type Box, type Camera } from "@tscircuit/simple-3d-svg"
-import {
-  getDefaultCameraForPcbBoard,
-  type AnglePreset,
-} from "./getDefaultCameraForPcbBoard"
-import { getDefaultCameraForComponents } from "./getDefaultCameraForComponents"
 import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
+import { getDefaultCameraForComponents } from "./getDefaultCameraForComponents"
+import {
+  type AnglePreset,
+  getDefaultCameraForPcbBoard,
+} from "./getDefaultCameraForPcbBoard"
 import type {
-  Simple3dSvgOptions,
   BackgroundOptions,
   RenderSceneOptions,
+  Simple3dSvgOptions,
 } from "./types"
 import { getColorFromBackgroundOptions } from "./utils/get-background-color-from-options"
 
@@ -165,7 +165,9 @@ export async function convertCircuitJsonToSimple3dScene(
         z: pcbBoard.height,
       },
       faceImages: {
-        top: `data:image/svg+xml;base64,${btoa(pcbTopSvg)}`,
+        // btoa() throws on non-Latin1 silkscreen (Ω, CJK, …). UTF-8 base64
+        // keeps those characters in the board-face SVG.
+        top: `data:image/svg+xml;base64,${Buffer.from(pcbTopSvg, "utf8").toString("base64")}`,
       },
       projectionSubdivision: 10,
       color: "rgba(0,140,0,0.8)",
