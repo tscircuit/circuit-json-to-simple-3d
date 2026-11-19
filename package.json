@@ -1,5 +1,6 @@
 {
   "name": "circuit-json-to-simple-3d",
+  "license": "MIT",
   "main": "dist/index.js",
   "version": "0.0.10",
   "repository": {
