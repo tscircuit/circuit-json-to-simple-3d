@@ -180,10 +180,13 @@ export async function convertCircuitJsonToSimple3dScene(
       DEFAULT_COMP_HEIGHT,
     )
     const boardThickness = pcbBoard?.thickness ?? DEFAULT_BOARD_THICKNESS
+    const layer =
+      typeof comp.layer === "string" ? comp.layer : (comp.layer as any)?.name
+    const layerSign = layer === "bottom" ? -1 : 1
     boxes.push({
       center: {
         x: comp.center.x,
-        y: boardThickness / 2 + compHeight / 2,
+        y: layerSign * (boardThickness / 2 + compHeight / 2),
         z: comp.center.y,
       },
       size: {
